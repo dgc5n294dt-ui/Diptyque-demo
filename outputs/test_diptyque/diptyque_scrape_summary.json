@@ -1,0 +1,13 @@
+{
+  "generated_at_epoch": 1783043676,
+  "base_url": "https://www.diptyque-cn.com/",
+  "category_page_count": 88,
+  "unique_product_url_count": 8,
+  "record_count": 8,
+  "category_errors": [],
+  "product_errors": [],
+  "output_files": {
+    "json": "outputs\\test_diptyque\\diptyque_products.json",
+    "csv": "outputs\\test_diptyque\\diptyque_products.csv"
+  }
+}

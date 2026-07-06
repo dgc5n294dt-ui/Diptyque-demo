@@ -1,0 +1,67 @@
+﻿import { useMemo, useState } from "react";
+
+import type { AskResponse } from "../lib/contracts.js";
+import { askGraphQuestion } from "../services/askClient.js";
+import { RetrievalResultView } from "./RetrievalResultView.js";
+
+const SAMPLE_QUESTIONS = [
+  "鍝簺浜у搧鍚湁鏃犺姳鏋滈璋冿紵",
+  "澶氱敤閫斿灞呮竻娲佸柗闆炬湁鍝簺棣欒皟锛?,
+  "鏈夊摢浜涘惈鏈夎柊琛ｈ崏棣欒皟鐨勫晢鍝侊紵",
+  "甯岃厞鏃犺姳鏋滈璋冩湁鍝簺浜у搧锛?,
+  "鍦ｆ棩灏旀浖澶ч亾34鍙锋湁鍝簺鐩稿叧鍟嗗搧锛?,
+  "杩蜂綘棣欐皼铚＄儧绀肩洅鍖呭惈鍝簺棣欒皟锛?,
+  "鏈夊摢浜涜溅杞芥墿棣欏櫒鐩稿叧鍟嗗搧锛?,
+  "鏃犺姳鏋滈璋冮噷鍝簺鏄湣鐑涳紝鍝簺鏄鍐呭柗闆撅紝鍝簺鏄韩浣撴姢鐞嗭紵",
+  "鏈夊摢浜?000鍏冧互涓婄殑涓汉棣欐皼锛?,
+  "鍝簺鍟嗗搧鍚屾椂鍖呭惈鏃犺姳鏋滃拰闆澗锛?,
+];
+
+export function QueryTab(): JSX.Element {
+  const [question, setQuestion] = useState(SAMPLE_QUESTIONS[0]);
+  const [result, setResult] = useState<AskResponse | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const providerHint = useMemo(() => result?.provider ?? "mock", [result]);
+
+  async function handleAsk(): Promise<void> {
+    if (!question.trim()) return;
+    setLoading(true);
+    setError("");
+    try {
+      const response = await askGraphQuestion(question.trim());
+      setResult(response);
+    } catch (askError) {
+      setError(askError instanceof Error ? askError.message : String(askError));
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <section className="query-tab">
+      <div className="section-header">
+        <h2>闂瓟</h2>
+        <p>褰撳墠浣跨敤 {providerHint} answer provider锛涘悗缁彲鍒囨崲涓?DeepSeek銆?/p>
+      </div>
+
+      <div className="query-toolbar">
+        <textarea value={question} onChange={(event) => setQuestion(event.target.value)} rows={3} placeholder="杈撳叆涓€涓晢鍝佸浘璋遍棶棰?.." />
+        <div className="query-actions">
+          <button onClick={() => void handleAsk()} disabled={loading}>{loading ? "妫€绱腑..." : "鍙戦€?}</button>
+          <button className="secondary" onClick={() => { setQuestion(""); setResult(null); setError(""); }}>閲嶇疆</button>
+        </div>
+      </div>
+
+      <div className="sample-question-list">
+        {SAMPLE_QUESTIONS.map((sample) => (
+          <button key={sample} className="sample-chip" onClick={() => setQuestion(sample)}>{sample}</button>
+        ))}
+      </div>
+
+      {error ? <div className="error-banner">{error}</div> : null}
+      <RetrievalResultView result={result} />
+    </section>
+  );
+}

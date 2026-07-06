@@ -1,0 +1,91 @@
+﻿import type { AskResponse, AnswerProvider } from "../lib/contracts.js";
+import { buildAnswerPrompt } from "./buildAnswerPrompt.js";
+import { formatAnswerFromRetrieval } from "../../scripts/answer-graph.js";
+import { retrieveGraphQuestion } from "../../scripts/retrieve-graph.js";
+
+function getConfiguredProvider(): AnswerProvider {
+  const raw = String(process.env.ANSWER_PROVIDER ?? "mock").trim().toLowerCase();
+  return raw === "deepseek" ? "deepseek" : "mock";
+}
+
+async function buildMockResponse(question: string): Promise<AskResponse> {
+  const retrieval = await retrieveGraphQuestion(question);
+  const answerResult = formatAnswerFromRetrieval(retrieval as never);
+
+  return {
+    ...(retrieval as Omit<AskResponse, "answer" | "provider">),
+    answer: answerResult.answer,
+    evidence_paths: answerResult.evidence_paths.length > 0 ? answerResult.evidence_paths : retrieval.evidence_paths,
+    warnings: [...retrieval.warnings, ...answerResult.warnings],
+    provider: "mock",
+  };
+}
+
+async function buildDeepSeekResponse(question: string): Promise<AskResponse> {
+  const fallback = await buildMockResponse(question);
+  const apiKey = String(process.env.DEEPSEEK_API_KEY ?? "").trim();
+  const baseUrl = String(process.env.DEEPSEEK_BASE_URL ?? "https://api.deepseek.com").trim().replace(/\/$/, "");
+  const model = String(process.env.DEEPSEEK_MODEL ?? "deepseek-chat").trim();
+
+  if (!apiKey) {
+    return {
+      ...fallback,
+      warnings: [...fallback.warnings, "ANSWER_PROVIDER=deepseek锛屼絾褰撳墠娌℃湁閰嶇疆 DEEPSEEK_API_KEY锛屽凡鍥為€€涓?mock provider銆?],
+      provider: "mock",
+    };
+  }
+
+  const prompt = buildAnswerPrompt(fallback);
+
+  try {
+    const response = await fetch(`${baseUrl}/chat/completions`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model,
+        temperature: 0.2,
+        messages: [
+          { role: "system", content: prompt.system },
+          { role: "user", content: prompt.user },
+        ],
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`DeepSeek request failed with status ${response.status}`);
+    }
+
+    const payload = (await response.json()) as {
+      choices?: Array<{ message?: { content?: string } }>;
+    };
+
+    const content = payload.choices?.[0]?.message?.content?.trim();
+    if (!content) {
+      throw new Error("DeepSeek returned an empty answer.");
+    }
+
+    return {
+      ...fallback,
+      answer: content,
+      provider: "deepseek",
+    };
+  } catch (error) {
+    return {
+      ...fallback,
+      warnings: [...fallback.warnings, `DeepSeek provider 璋冪敤澶辫触锛屽凡鍥為€€涓?mock provider锛?{error instanceof Error ? error.message : String(error)}`],
+      provider: "mock",
+    };
+  }
+}
+
+export async function askQuestion(question: string): Promise<AskResponse> {
+  const provider = getConfiguredProvider();
+  return provider === "deepseek" ? buildDeepSeekResponse(question) : buildMockResponse(question);
+}
+
+export function getDefaultProvider(): AnswerProvider {
+  return getConfiguredProvider();
+}

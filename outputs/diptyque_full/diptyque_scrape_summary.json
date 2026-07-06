@@ -1,0 +1,18 @@
+{
+  "generated_at_epoch": 1783043818,
+  "base_url": "https://www.diptyque-cn.com/",
+  "category_page_count": 88,
+  "unique_product_url_count": 370,
+  "record_count": 370,
+  "category_errors": [],
+  "product_errors": [
+    {
+      "url": "https://www.diptyque-cn.com/p/deco-deco01649-pdp.html",
+      "error": "detail page failed; used fallback: Failed to fetch https://www.diptyque-cn.com/p/deco-deco01649-pdp.html: 500 Server Error: Internal Server Error for url: https://www.diptyque-cn.com/p/deco-deco01649-pdp.html"
+    }
+  ],
+  "output_files": {
+    "json": "outputs\\diptyque_full\\diptyque_products.json",
+    "csv": "outputs\\diptyque_full\\diptyque_products.csv"
+  }
+}
