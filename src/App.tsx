@@ -8,6 +8,10 @@ import type { GraphData, GraphEdge, GraphNode } from "./lib/contracts.js";
 
 type TabKey = "graph" | "qa";
 
+function publicUrl(path: string): string {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+}
+
 function nodeMatchesQuery(node: GraphNode, query: string): boolean {
   const haystack = [node.label, JSON.stringify(node.data ?? {})].join(" ").toLowerCase();
   return haystack.includes(query.toLowerCase());
@@ -68,6 +72,7 @@ export default function App(): JSX.Element {
   const [tab, setTab] = useState<TabKey>("graph");
   const [graph, setGraph] = useState<GraphData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState("");
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [searchText, setSearchText] = useState("");
   const [neighborDepth, setNeighborDepth] = useState(2);
@@ -75,10 +80,21 @@ export default function App(): JSX.Element {
 
   useEffect(() => {
     async function load(): Promise<void> {
-      const response = await fetch("/product-graph.json");
-      const payload = (await response.json()) as GraphData;
-      setGraph(payload);
-      setLoading(false);
+      setLoading(true);
+      setLoadError("");
+      try {
+        const response = await fetch(publicUrl("product-graph.json"));
+        if (!response.ok) {
+          throw new Error(`Failed to load product-graph.json: ${response.status}`);
+        }
+        const payload = (await response.json()) as GraphData;
+        setGraph(payload);
+      } catch (error) {
+        console.error("Failed to load graph data.", error);
+        setLoadError("图谱数据加载失败，请检查 product-graph.json 路径或部署配置。");
+      } finally {
+        setLoading(false);
+      }
     }
 
     void load();
@@ -106,8 +122,12 @@ export default function App(): JSX.Element {
     });
   }
 
-  if (loading || !graph) {
+  if (loading) {
     return <main className="app-shell loading-state">正在加载 Diptyque 产品知识图谱...</main>;
+  }
+
+  if (loadError || !graph) {
+    return <main className="app-shell loading-state error-screen">{loadError || "图谱数据加载失败，请检查部署配置。"}</main>;
   }
 
   return (

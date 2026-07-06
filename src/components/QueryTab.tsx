@@ -50,7 +50,7 @@ export function QueryTab(): JSX.Element {
     <section className="query-tab">
       <div className="section-header">
         <h2>问答</h2>
-        <p>当前使用 {providerHint} answer provider；后续可切换为 DeepSeek。</p>
+        <p>当前使用 {providerHint} answer provider；如果静态站点没有本地 API，会自动回退到 mock 结果。</p>
       </div>
 
       <div className="query-toolbar">

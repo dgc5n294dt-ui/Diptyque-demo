@@ -1,0 +1,3939 @@
+[
+  {
+    "id": 1,
+    "query": "哪些产品含有无花果香调？",
+    "intent": "products_by_entity",
+    "matched_entities": [
+      {
+        "id": "scent-note:无花果",
+        "label": "无花果",
+        "type": "ScentNote",
+        "anchor_text": "无花果",
+        "match_mode": "exact",
+        "score": 1090
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:figuier-fig-tree-interior-exterior-candle",
+        "label": "超大号香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "超大号香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "3400",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 超大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:home-fi600-600g",
+        "label": "大号香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "夏日气息家居香氛",
+        "subcategory": "夏日气息家居香氛",
+        "collection_or_series": "无花果",
+        "price": "1800",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "家居香氛",
+        "collection_or_series": "",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:refill-multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾补充装",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "",
+        "price": "250",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-small-candle",
+        "label": "迷你香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:savon-34-boulevard-saint-germain-1",
+        "label": "圣日尔曼大道34号 - 香氛皂",
+        "product_type": "perfume",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号 - 香氛皂 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-34-boulevard-saint-germain-2-1",
+        "label": "圣日尔曼大道34号扩香精",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "扩香精",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1620",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-34-boulevard-saint-germain-recharge-2-1",
+        "label": "圣日尔曼大道34号扩香精补充瓶",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "补充装",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "500",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-insert-1",
+        "label": "圣日尔曼大道34号扩香器香氛补充包",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "补充装",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "450",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-room-spray-1",
+        "label": "圣日尔曼大道34号室内喷雾",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "家居香氛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "660",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:palet-parfume-34-boulevard-saint-germain-1",
+        "label": "圣日尔曼大道34号室内香氛蜡",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "家居香氛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-room-spray",
+        "label": "无花果 - 室内喷雾",
+        "product_type": "home fragrance",
+        "category": "室内喷雾",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "600",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果 - 室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:fig-tree-home-fragrance-diffuser-refill",
+        "label": "无花果室内扩香摆件补充装",
+        "product_type": "candle",
+        "category": "室内扩香摆件",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "840",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果室内扩香摆件补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-figuier-2-1",
+        "label": "希腊无花果扩香精",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "1620",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-hourglass-diffuser-refill-2-1",
+        "label": "希腊无花果扩香精补充瓶",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "500",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:cartouche-figuier-1",
+        "label": "希腊无花果扩香器香氛补充包",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "450",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-scented-oval",
+        "label": "希腊无花果室内香氛蜡",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-hand-and-body-lotion-1",
+        "label": "希腊无花果香调 - 润肤乳",
+        "product_type": "body care",
+        "category": "希腊无花果",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "夏日护肤仪式",
+        "price": "540",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调 - 润肤乳 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-eau-de-parfum-75ml-1",
+        "label": "希腊无花果香调淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "希腊无花果",
+        "price": "1650",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-50ml-1",
+        "label": "希腊无花果香调淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "希腊无花果",
+        "price": "1050",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-100ml-1",
+        "label": "希腊无花果香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "希腊无花果",
+        "price": "1420",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philohmist-hair-mist",
+        "label": "希腊无花果香调发香喷雾",
+        "product_type": "fragrance",
+        "category": "希腊无花果",
+        "subcategory": "希腊无花果",
+        "collection_or_series": "希腊无花果",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调发香喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-cleansing-hand-and-body-gel-1",
+        "label": "希腊无花果香调洁肤露",
+        "product_type": "fragrance",
+        "category": "希腊无花果",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "夏日护肤仪式",
+        "price": "440",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调洁肤露 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:bougie-figuier-190-remavp",
+        "label": "香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "630",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-candle-300g-remavp",
+        "label": "中号香氛蜡烛-圣日尔曼大道34号",
+        "product_type": "candle",
+        "category": "中号香氛蜡烛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "920",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 中号香氛蜡烛-圣日尔曼大道34号 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:bougie-figuier-verte-remavp",
+        "label": "中号香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "中号香氛蜡烛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "920",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 中号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      }
+    ],
+    "indirect_or_bundle_products": [
+      {
+        "product_id": "product:discovery-set-of-5-eaux-de-toilette-1",
+        "label": "淡香水礼盒五支装",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "个人香氛",
+        "collection_or_series": "",
+        "price": "1070",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      },
+      {
+        "product_id": "product:set-of-mini-candles-berries-fig-tree-roses",
+        "label": "迷你香氛蜡烛礼盒 - 甄选礼赠",
+        "product_type": "home fragrance",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "1110",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      },
+      {
+        "product_id": "product:car-diffuser-with-34-boulevard-saint-germain-insert-2",
+        "label": "圣日尔曼大道34号车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      },
+      {
+        "product_id": "product:diffuseur-pour-la-voiture-et-sa-cartouche-parfumee-figuier-2",
+        "label": "无花果车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "无花果",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      }
+    ],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [],
+    "scent_notes": [],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Product: 超大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 迷你香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号 - 香氛皂 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号扩香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 无花果 - 室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 无花果车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 无花果室内扩香摆件补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果扩香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调 - 润肤乳 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调淡香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调发香喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调洁肤露 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 中号香氛蜡烛-圣日尔曼大道34号 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 中号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 2,
+    "query": "多用途家居清洁喷雾有哪些香调？",
+    "intent": "product_to_scent_notes",
+    "matched_entities": [
+      {
+        "id": "product:multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾",
+        "type": "Product",
+        "anchor_text": "多用途家居清洁喷雾",
+        "match_mode": "exact",
+        "score": 1100
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "家居香氛",
+        "collection_or_series": "",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Matched product label -> Product: 多用途家居清洁喷雾"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "core_product_object"
+      }
+    ],
+    "indirect_or_bundle_products": [],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [
+      {
+        "product_id": "product:multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "家居香氛",
+        "collection_or_series": "",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Matched product label -> Product: 多用途家居清洁喷雾"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "core_product_object"
+      }
+    ],
+    "scent_notes": [
+      {
+        "scent_note_id": "scent-note:除垢",
+        "label": "除垢",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 除垢"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:果香调",
+        "label": "果香调",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 果香调"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:清洁",
+        "label": "清洁",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 清洁"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:清洁-去油脂-除垢",
+        "label": "清洁、去油脂、除垢",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 清洁、去油脂、除垢"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:去油脂",
+        "label": "去油脂",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 去油脂"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:无花果",
+        "label": "无花果",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:雪松",
+        "label": "雪松",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 雪松"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:薰衣草",
+        "label": "薰衣草",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ]
+      }
+    ],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Matched product label -> Product: 多用途家居清洁喷雾",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 除垢",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 果香调",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 清洁",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 清洁、去油脂、除垢",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 去油脂",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 雪松",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 3,
+    "query": "有哪些含有薰衣草香调的商品？",
+    "intent": "products_by_entity",
+    "matched_entities": [
+      {
+        "id": "scent-note:薰衣草",
+        "label": "薰衣草",
+        "type": "ScentNote",
+        "anchor_text": "薰衣草",
+        "match_mode": "exact",
+        "score": 1090
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "家居香氛",
+        "collection_or_series": "",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:refill-multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾补充装",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "",
+        "price": "250",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:feuille-de-lavande-lavender-leaf-small-candle-1",
+        "label": "迷你香氛蜡烛-薰衣草",
+        "product_type": "candle",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛-薰衣草 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:softening-hand-wash-glass-1",
+        "label": "柔肤手部清洁露",
+        "product_type": "home fragrance",
+        "category": "手部护肤",
+        "subcategory": "身体护理",
+        "collection_or_series": "",
+        "price": "600",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 柔肤手部清洁露 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:refill-softening-hand-wash-1",
+        "label": "柔肤手部清洁露补充装",
+        "product_type": "home fragrance",
+        "category": "手部护肤",
+        "subcategory": "身体护理",
+        "collection_or_series": "",
+        "price": "400",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 柔肤手部清洁露补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:bougie-feuille-de-lavande-190g-1-remavp",
+        "label": "香氛蜡烛-薰衣草",
+        "product_type": "candle",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "",
+        "price": "630",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 香氛蜡烛-薰衣草 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:ceramic-for-wool-and-delicate-textiles-with-cedarwood",
+        "label": "雪松木衣物香氛陶瓷 - 家居清洁护理系列",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "家居香氛",
+        "collection_or_series": "",
+        "price": "420",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 雪松木衣物香氛陶瓷 - 家居清洁护理系列 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:refill-ceramic-for-wool-and-delicate-textiles-with-cedarwood",
+        "label": "雪松木衣物香氛陶瓷补充装",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "",
+        "price": "190",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 雪松木衣物香氛陶瓷补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      }
+    ],
+    "indirect_or_bundle_products": [],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [],
+    "scent_notes": [],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 迷你香氛蜡烛-薰衣草 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 柔肤手部清洁露 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 柔肤手部清洁露补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 香氛蜡烛-薰衣草 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 雪松木衣物香氛陶瓷 - 家居清洁护理系列 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 雪松木衣物香氛陶瓷补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 4,
+    "query": "希腊无花果香调有哪些产品？",
+    "intent": "products_by_entity",
+    "matched_entities": [
+      {
+        "id": "scent-note:希腊无花果",
+        "label": "希腊无花果",
+        "type": "ScentNote",
+        "anchor_text": "希腊无花果",
+        "match_mode": "exact",
+        "score": 1090
+      },
+      {
+        "id": "collection:希腊无花果",
+        "label": "希腊无花果",
+        "type": "CollectionOrSeries",
+        "anchor_text": "希腊无花果",
+        "match_mode": "exact",
+        "score": 1080
+      },
+      {
+        "id": "category:希腊无花果",
+        "label": "希腊无花果",
+        "type": "Category",
+        "anchor_text": "希腊无花果",
+        "match_mode": "exact",
+        "score": 1070
+      },
+      {
+        "id": "subcategory:希腊无花果",
+        "label": "希腊无花果",
+        "type": "Subcategory",
+        "anchor_text": "希腊无花果",
+        "match_mode": "exact",
+        "score": 1060
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:fig-tree-home-fragrance-diffuser-refill",
+        "label": "无花果室内扩香摆件补充装",
+        "product_type": "candle",
+        "category": "室内扩香摆件",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "840",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果室内扩香摆件补充装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-figuier-2-1",
+        "label": "希腊无花果扩香精",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "1620",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香精 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-hourglass-diffuser-refill-2-1",
+        "label": "希腊无花果扩香精补充瓶",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "500",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:cartouche-figuier-1",
+        "label": "希腊无花果扩香器香氛补充包",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "450",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-scented-oval",
+        "label": "希腊无花果室内香氛蜡",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-hand-and-body-lotion-1",
+        "label": "希腊无花果香调 - 润肤乳",
+        "product_type": "body care",
+        "category": "希腊无花果",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "夏日护肤仪式",
+        "price": "540",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调 - 润肤乳 -> BELONGS_TO_CATEGORY -> Category: 希腊无花果",
+          "Product: 希腊无花果香调 - 润肤乳 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-eau-de-parfum-75ml-1",
+        "label": "希腊无花果香调淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "希腊无花果",
+        "price": "1650",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香精 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+          "Product: 希腊无花果香调淡香精 -> PART_OF_COLLECTION -> CollectionOrSeries: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-50ml-1",
+        "label": "希腊无花果香调淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "希腊无花果",
+        "price": "1050",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+          "Product: 希腊无花果香调淡香水 -> PART_OF_COLLECTION -> CollectionOrSeries: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-100ml-1",
+        "label": "希腊无花果香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "希腊无花果",
+        "price": "1420",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+          "Product: 希腊无花果香调淡香水 -> PART_OF_COLLECTION -> CollectionOrSeries: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philohmist-hair-mist",
+        "label": "希腊无花果香调发香喷雾",
+        "product_type": "fragrance",
+        "category": "希腊无花果",
+        "subcategory": "希腊无花果",
+        "collection_or_series": "希腊无花果",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调发香喷雾 -> BELONGS_TO_CATEGORY -> Category: 希腊无花果",
+          "Product: 希腊无花果香调发香喷雾 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 希腊无花果",
+          "Product: 希腊无花果香调发香喷雾 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+          "Product: 希腊无花果香调发香喷雾 -> PART_OF_COLLECTION -> CollectionOrSeries: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-cleansing-hand-and-body-gel-1",
+        "label": "希腊无花果香调洁肤露",
+        "product_type": "fragrance",
+        "category": "希腊无花果",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "夏日护肤仪式",
+        "price": "440",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调洁肤露 -> BELONGS_TO_CATEGORY -> Category: 希腊无花果",
+          "Product: 希腊无花果香调洁肤露 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      }
+    ],
+    "indirect_or_bundle_products": [
+      {
+        "product_id": "product:discovery-set-of-5-eaux-de-toilette-1",
+        "label": "淡香水礼盒五支装",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "个人香氛",
+        "collection_or_series": "",
+        "price": "1070",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      },
+      {
+        "product_id": "product:diffuseur-pour-la-voiture-et-sa-cartouche-parfumee-figuier-2",
+        "label": "无花果车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "无花果",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      }
+    ],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [],
+    "scent_notes": [],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 无花果车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 无花果室内扩香摆件补充装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果扩香精 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果香调 - 润肤乳 -> BELONGS_TO_CATEGORY -> Category: 希腊无花果",
+      "Product: 希腊无花果香调 - 润肤乳 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果香调淡香精 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果香调淡香精 -> PART_OF_COLLECTION -> CollectionOrSeries: 希腊无花果",
+      "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果香调淡香水 -> PART_OF_COLLECTION -> CollectionOrSeries: 希腊无花果",
+      "Product: 希腊无花果香调发香喷雾 -> BELONGS_TO_CATEGORY -> Category: 希腊无花果",
+      "Product: 希腊无花果香调发香喷雾 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 希腊无花果",
+      "Product: 希腊无花果香调发香喷雾 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果香调发香喷雾 -> PART_OF_COLLECTION -> CollectionOrSeries: 希腊无花果",
+      "Product: 希腊无花果香调洁肤露 -> BELONGS_TO_CATEGORY -> Category: 希腊无花果",
+      "Product: 希腊无花果香调洁肤露 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 5,
+    "query": "圣日尔曼大道34号有哪些相关商品？",
+    "intent": "products_by_entity",
+    "matched_entities": [
+      {
+        "id": "scent-note:圣日尔曼大道34号",
+        "label": "圣日尔曼大道34号",
+        "type": "ScentNote",
+        "anchor_text": "圣日尔曼大道34号",
+        "match_mode": "exact",
+        "score": 1090
+      },
+      {
+        "id": "collection:圣日尔曼大道34号",
+        "label": "圣日尔曼大道34号",
+        "type": "CollectionOrSeries",
+        "anchor_text": "圣日尔曼大道34号",
+        "match_mode": "exact",
+        "score": 1080
+      },
+      {
+        "id": "category:圣日尔曼大道34号",
+        "label": "圣日尔曼大道34号",
+        "type": "Category",
+        "anchor_text": "圣日尔曼大道34号",
+        "match_mode": "exact",
+        "score": 1070
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:34-boulevard-saint-germain-candle-1-5kg",
+        "label": "超大号香氛蜡烛-圣日尔曼大道34号",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "超大号香氛蜡烛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "3400",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 超大号香氛蜡烛-圣日尔曼大道34号 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 超大号香氛蜡烛-圣日尔曼大道34号 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-600g",
+        "label": "大号香氛蜡烛-圣日尔曼大道34号",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1800",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 大号香氛蜡烛-圣日尔曼大道34号 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 大号香氛蜡烛-圣日尔曼大道34号 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:savon-34-boulevard-saint-germain-1",
+        "label": "圣日尔曼大道34号 - 香氛皂",
+        "product_type": "perfume",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号 - 香氛皂 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号 - 香氛皂 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-eau-de-parfum-1",
+        "label": "圣日尔曼大道34号淡香精",
+        "product_type": "fragrance",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "淡香精",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1840",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号淡香精 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号淡香精 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-st-germain-eau-de-toilette-1",
+        "label": "圣日尔曼大道34号淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1500",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号淡香水 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-34-boulevard-saint-germain-2-1",
+        "label": "圣日尔曼大道34号扩香精",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "扩香精",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1620",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香精 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号扩香精 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号扩香精 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-34-boulevard-saint-germain-recharge-2-1",
+        "label": "圣日尔曼大道34号扩香精补充瓶",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "补充装",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "500",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香精补充瓶 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号扩香精补充瓶 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-insert-1",
+        "label": "圣日尔曼大道34号扩香器香氛补充包",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "补充装",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "450",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香器香氛补充包 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号扩香器香氛补充包 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:refreed34b2l-home-fragrance-diffuser-refill",
+        "label": "圣日尔曼大道34号室内扩香摆件补充瓶",
+        "product_type": "candle",
+        "category": "室内扩香摆件",
+        "subcategory": "室内扩香摆件",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "5300",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号室内扩香摆件补充瓶 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-home-fragrance-diffuser-refill-1",
+        "label": "圣日尔曼大道34号室内扩香摆件补充装",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "补充装",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "840",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号室内扩香摆件补充装 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号室内扩香摆件补充装 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-room-spray-1",
+        "label": "圣日尔曼大道34号室内喷雾",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "家居香氛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "660",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号室内喷雾 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号室内喷雾 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:palet-parfume-34-boulevard-saint-germain-1",
+        "label": "圣日尔曼大道34号室内香氛蜡",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "家居香氛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号室内香氛蜡 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号室内香氛蜡 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-candle-300g-remavp",
+        "label": "中号香氛蜡烛-圣日尔曼大道34号",
+        "product_type": "candle",
+        "category": "中号香氛蜡烛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "920",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 中号香氛蜡烛-圣日尔曼大道34号 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      }
+    ],
+    "indirect_or_bundle_products": [
+      {
+        "product_id": "product:car-diffuser-with-34-boulevard-saint-germain-insert-2",
+        "label": "圣日尔曼大道34号车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+          "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      }
+    ],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [],
+    "scent_notes": [],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Product: 超大号香氛蜡烛-圣日尔曼大道34号 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 超大号香氛蜡烛-圣日尔曼大道34号 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 大号香氛蜡烛-圣日尔曼大道34号 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 大号香氛蜡烛-圣日尔曼大道34号 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号 - 香氛皂 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号 - 香氛皂 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号淡香精 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号淡香精 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号淡香水 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香精 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香精 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香精 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香精补充瓶 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香精补充瓶 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香器香氛补充包 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号扩香器香氛补充包 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内扩香摆件补充瓶 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内扩香摆件补充装 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内扩香摆件补充装 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内喷雾 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内喷雾 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内香氛蜡 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号室内香氛蜡 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 中号香氛蜡烛-圣日尔曼大道34号 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 6,
+    "query": "迷你香氛蜡烛礼盒包含哪些香调？",
+    "intent": "product_to_scent_notes",
+    "matched_entities": [
+      {
+        "id": "product:set5x35el-candle-190g-1",
+        "label": "迷你香氛蜡烛礼盒-5只装（限量版）",
+        "type": "Product",
+        "anchor_text": "迷你香氛蜡烛礼盒",
+        "match_mode": "contains",
+        "score": 617
+      },
+      {
+        "id": "product:set-of-mini-candles-berries-fig-tree-roses",
+        "label": "迷你香氛蜡烛礼盒 - 甄选礼赠",
+        "type": "Product",
+        "anchor_text": "迷你香氛蜡烛礼盒",
+        "match_mode": "contains",
+        "score": 615
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:set-of-mini-candles-berries-fig-tree-roses",
+        "label": "迷你香氛蜡烛礼盒 - 甄选礼赠",
+        "product_type": "home fragrance",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "1110",
+        "price_range": "",
+        "matched_paths": [
+          "Matched product label -> Product: 迷你香氛蜡烛礼盒 - 甄选礼赠"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "core_bundle_or_set_object"
+      },
+      {
+        "product_id": "product:set5x35el-candle-190g-1",
+        "label": "迷你香氛蜡烛礼盒-5只装（限量版）",
+        "product_type": "home fragrance",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "",
+        "price": "850",
+        "price_range": "",
+        "matched_paths": [
+          "Matched product label -> Product: 迷你香氛蜡烛礼盒-5只装（限量版）"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "core_bundle_or_set_object"
+      }
+    ],
+    "indirect_or_bundle_products": [],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [
+      {
+        "product_id": "product:set-of-mini-candles-berries-fig-tree-roses",
+        "label": "迷你香氛蜡烛礼盒 - 甄选礼赠",
+        "product_type": "home fragrance",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "1110",
+        "price_range": "",
+        "matched_paths": [
+          "Matched product label -> Product: 迷你香氛蜡烛礼盒 - 甄选礼赠"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "core_bundle_or_set_object"
+      },
+      {
+        "product_id": "product:set5x35el-candle-190g-1",
+        "label": "迷你香氛蜡烛礼盒-5只装（限量版）",
+        "product_type": "home fragrance",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "",
+        "price": "850",
+        "price_range": "",
+        "matched_paths": [
+          "Matched product label -> Product: 迷你香氛蜡烛礼盒-5只装（限量版）"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "core_bundle_or_set_object"
+      }
+    ],
+    "scent_notes": [
+      {
+        "scent_note_id": "scent-note:大黄",
+        "label": "大黄",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 大黄"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:黑醋栗",
+        "label": "黑醋栗",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 黑醋栗"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:黑芝麻",
+        "label": "黑芝麻",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 黑芝麻"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:浆果",
+        "label": "浆果",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 浆果"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:咖啡",
+        "label": "咖啡",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 咖啡"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:玫瑰",
+        "label": "玫瑰",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 玫瑰"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:玫瑰-无花果树-浆果",
+        "label": "玫瑰、无花果树、浆果",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 玫瑰、无花果树、浆果"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:无花果",
+        "label": "无花果",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:无花果树",
+        "label": "无花果树",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果树"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:荨麻草",
+        "label": "荨麻草",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 荨麻草"
+        ]
+      },
+      {
+        "scent_note_id": "scent-note:紫苏",
+        "label": "紫苏",
+        "type": "ScentNote",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 紫苏"
+        ]
+      }
+    ],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Matched product label -> Product: 迷你香氛蜡烛礼盒 - 甄选礼赠",
+      "Matched product label -> Product: 迷你香氛蜡烛礼盒-5只装（限量版）",
+      "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 大黄",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 黑醋栗",
+      "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 黑芝麻",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 浆果",
+      "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 咖啡",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 玫瑰",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 玫瑰、无花果树、浆果",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果树",
+      "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 荨麻草",
+      "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 紫苏"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 7,
+    "query": "有哪些车载扩香器相关商品？",
+    "intent": "products_by_entity",
+    "matched_entities": [
+      {
+        "id": "subcategory:车载扩香器",
+        "label": "车载扩香器",
+        "type": "Subcategory",
+        "anchor_text": "车载扩香器",
+        "match_mode": "exact",
+        "score": 1060
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:car-diffuser-with-fleur-d-oranger-insert",
+        "label": "橙花 - 车载扩香器香氛套装",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 橙花 - 车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "bundle_like_object_is_core_for_current_intent"
+      },
+      {
+        "product_id": "product:mimosa-car-diffuser-and-insert",
+        "label": "含羞草车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "含羞草",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 含羞草车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "bundle_like_object_is_core_for_current_intent"
+      },
+      {
+        "product_id": "product:car-diffuser-with-baies-insert",
+        "label": "浆果香车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "浆果香",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 浆果香车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "bundle_like_object_is_core_for_current_intent"
+      },
+      {
+        "product_id": "product:car-diffuser-with-roses-insert",
+        "label": "玫瑰车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 玫瑰车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "bundle_like_object_is_core_for_current_intent"
+      },
+      {
+        "product_id": "product:car-diffuser-with-34-boulevard-saint-germain-insert-2",
+        "label": "圣日尔曼大道34号车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "bundle_like_object_is_core_for_current_intent"
+      },
+      {
+        "product_id": "product:diffuseur-pour-la-voiture-et-sa-cartouche-parfumee-figuier-2",
+        "label": "无花果车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "无花果",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "bundle_like_object_is_core_for_current_intent"
+      }
+    ],
+    "indirect_or_bundle_products": [],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [],
+    "scent_notes": [],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Product: 橙花 - 车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 含羞草车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 浆果香车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 玫瑰车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 无花果车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 8,
+    "query": "无花果香调里哪些是蜡烛，哪些是室内喷雾，哪些是身体护理？",
+    "intent": "group_products_by_facets",
+    "matched_entities": [
+      {
+        "id": "scent-note:无花果",
+        "label": "无花果",
+        "type": "ScentNote",
+        "anchor_text": "无花果",
+        "match_mode": "exact",
+        "score": 1090
+      },
+      {
+        "id": "collection:无花果",
+        "label": "无花果",
+        "type": "CollectionOrSeries",
+        "anchor_text": "无花果",
+        "match_mode": "exact",
+        "score": 1080
+      },
+      {
+        "id": "subcategory:无花果",
+        "label": "无花果",
+        "type": "Subcategory",
+        "anchor_text": "无花果",
+        "match_mode": "exact",
+        "score": 1060
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:figuier-fig-tree-interior-exterior-candle",
+        "label": "超大号香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "超大号香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "3400",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 超大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 超大号香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:home-fi600-600g",
+        "label": "大号香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "夏日气息家居香氛",
+        "subcategory": "夏日气息家居香氛",
+        "collection_or_series": "无花果",
+        "price": "1800",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 大号香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "家居香氛",
+        "collection_or_series": "",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:refill-multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾补充装",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "",
+        "price": "250",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-small-candle",
+        "label": "迷你香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 迷你香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:savon-34-boulevard-saint-germain-1",
+        "label": "圣日尔曼大道34号 - 香氛皂",
+        "product_type": "perfume",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号 - 香氛皂 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-34-boulevard-saint-germain-2-1",
+        "label": "圣日尔曼大道34号扩香精",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "扩香精",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1620",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-34-boulevard-saint-germain-recharge-2-1",
+        "label": "圣日尔曼大道34号扩香精补充瓶",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "补充装",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "500",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-insert-1",
+        "label": "圣日尔曼大道34号扩香器香氛补充包",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "补充装",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "450",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-room-spray-1",
+        "label": "圣日尔曼大道34号室内喷雾",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "家居香氛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "660",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:palet-parfume-34-boulevard-saint-germain-1",
+        "label": "圣日尔曼大道34号室内香氛蜡",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "家居香氛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-room-spray",
+        "label": "无花果 - 室内喷雾",
+        "product_type": "home fragrance",
+        "category": "室内喷雾",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "600",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果 - 室内喷雾 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 无花果",
+          "Product: 无花果 - 室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 无花果 - 室内喷雾 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:fig-tree-home-fragrance-diffuser-refill",
+        "label": "无花果室内扩香摆件补充装",
+        "product_type": "candle",
+        "category": "室内扩香摆件",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "840",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果室内扩香摆件补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 无花果室内扩香摆件补充装 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:sablier-figuier-2-1",
+        "label": "希腊无花果扩香精",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "1620",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香精 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 无花果",
+          "Product: 希腊无花果扩香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 希腊无花果扩香精 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-hourglass-diffuser-refill-2-1",
+        "label": "希腊无花果扩香精补充瓶",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "500",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 希腊无花果扩香精补充瓶 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:cartouche-figuier-1",
+        "label": "希腊无花果扩香器香氛补充包",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "无花果",
+        "price": "450",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 希腊无花果扩香器香氛补充包 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-scented-oval",
+        "label": "希腊无花果室内香氛蜡",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果室内香氛蜡 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 无花果",
+          "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 希腊无花果室内香氛蜡 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-hand-and-body-lotion-1",
+        "label": "希腊无花果香调 - 润肤乳",
+        "product_type": "body care",
+        "category": "希腊无花果",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "夏日护肤仪式",
+        "price": "540",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调 - 润肤乳 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-eau-de-parfum-75ml-1",
+        "label": "希腊无花果香调淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "希腊无花果",
+        "price": "1650",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-50ml-1",
+        "label": "希腊无花果香调淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "希腊无花果",
+        "price": "1050",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-100ml-1",
+        "label": "希腊无花果香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "希腊无花果",
+        "price": "1420",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philohmist-hair-mist",
+        "label": "希腊无花果香调发香喷雾",
+        "product_type": "fragrance",
+        "category": "希腊无花果",
+        "subcategory": "希腊无花果",
+        "collection_or_series": "希腊无花果",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调发香喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:philosykos-cleansing-hand-and-body-gel-1",
+        "label": "希腊无花果香调洁肤露",
+        "product_type": "fragrance",
+        "category": "希腊无花果",
+        "subcategory": "香氛之艺身体护理",
+        "collection_or_series": "夏日护肤仪式",
+        "price": "440",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果香调洁肤露 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:bougie-figuier-190-remavp",
+        "label": "香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "630",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:34-boulevard-saint-germain-candle-300g-remavp",
+        "label": "中号香氛蜡烛-圣日尔曼大道34号",
+        "product_type": "candle",
+        "category": "中号香氛蜡烛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "920",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 中号香氛蜡烛-圣日尔曼大道34号 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:bougie-figuier-verte-remavp",
+        "label": "中号香氛蜡烛-无花果",
+        "product_type": "candle",
+        "category": "中号香氛蜡烛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "920",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 中号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 中号香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      }
+    ],
+    "indirect_or_bundle_products": [
+      {
+        "product_id": "product:discovery-set-of-5-eaux-de-toilette-1",
+        "label": "淡香水礼盒五支装",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "个人香氛",
+        "collection_or_series": "",
+        "price": "1070",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      },
+      {
+        "product_id": "product:set-of-mini-candles-berries-fig-tree-roses",
+        "label": "迷你香氛蜡烛礼盒 - 甄选礼赠",
+        "product_type": "home fragrance",
+        "category": "家居香氛",
+        "subcategory": "香氛蜡烛",
+        "collection_or_series": "无花果",
+        "price": "1110",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      },
+      {
+        "product_id": "product:car-diffuser-with-34-boulevard-saint-germain-insert-2",
+        "label": "圣日尔曼大道34号车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "圣日尔曼大道34号",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      },
+      {
+        "product_id": "product:diffuseur-pour-la-voiture-et-sa-cartouche-parfumee-figuier-2",
+        "label": "无花果车载扩香器香氛套装",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "车载扩香器",
+        "collection_or_series": "无花果",
+        "price": "1040",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 无花果车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 无花果车载扩香器香氛套装 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_related_match"
+      }
+    ],
+    "supporting_results": [
+      {
+        "product_id": "product:panoramic-tray-philosykos",
+        "label": "风景画陶瓷托盘-无花果",
+        "product_type": "decoration",
+        "category": "托盘",
+        "subcategory": "装饰摆件",
+        "collection_or_series": "无花果",
+        "price": "1050",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 风景画陶瓷托盘-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+        ],
+        "post_filter_group": "supporting_results",
+        "post_filter_reason": "secondary_relation_match"
+      }
+    ],
+    "uncertain_results": [],
+    "target_product": [],
+    "scent_notes": [],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Product: 超大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 超大号香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 大号香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 风景画陶瓷托盘-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 迷你香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 迷你香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 圣日尔曼大道34号 - 香氛皂 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号扩香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 无花果 - 室内喷雾 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 无花果",
+      "Product: 无花果 - 室内喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 无花果 - 室内喷雾 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 无花果车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 无花果车载扩香器香氛套装 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 无花果室内扩香摆件补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 无花果室内扩香摆件补充装 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 希腊无花果扩香精 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 无花果",
+      "Product: 希腊无花果扩香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果扩香精 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 希腊无花果扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果扩香精补充瓶 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 希腊无花果扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果扩香器香氛补充包 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 希腊无花果室内香氛蜡 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 无花果",
+      "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果室内香氛蜡 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 希腊无花果香调 - 润肤乳 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调淡香精 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调淡香水 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调发香喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果香调洁肤露 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 中号香氛蜡烛-圣日尔曼大道34号 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 中号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 中号香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 9,
+    "query": "有哪些1000元以上的个人香氛？",
+    "intent": "filtered_products",
+    "matched_entities": [
+      {
+        "id": "category:个人香氛",
+        "label": "个人香氛",
+        "type": "Category",
+        "anchor_text": "个人香氛",
+        "match_mode": "exact",
+        "score": 1070
+      },
+      {
+        "id": "subcategory:个人香氛",
+        "label": "个人香氛",
+        "type": "Subcategory",
+        "anchor_text": "个人香氛",
+        "match_mode": "exact",
+        "score": 1060
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:orpheon-eau-de-parfum-75ml",
+        "label": "奥费恩淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "奥费恩",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 奥费恩淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 奥费恩淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:orpheon-eau-de-toilette-100ml",
+        "label": "奥费恩淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "奥费恩",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 奥费恩淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 奥费恩淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:olene-eau-de-toilette-100ml-1",
+        "label": "奥利恩淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 奥利恩淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 奥利恩淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:olene-eau-toilette-50ml-1",
+        "label": "奥利恩淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 奥利恩淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 奥利恩淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-capitale-eau-de-parfum-1",
+        "label": "巴黎之水淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "巴黎之水",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 巴黎之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 巴黎之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:premo6100-de-parfum-100ml",
+        "label": "宝石之眼淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "大千之蕴",
+        "price": "2700",
+        "price_range": "2000+",
+        "matched_paths": [
+          "Product: 宝石之眼淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 宝石之眼淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-lautre-1",
+        "label": "别样淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 别样淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 别样淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:benjoin-boheme-eau-de-parfum",
+        "label": "波西米亚安息香淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "2390",
+        "price_range": "2000+",
+        "matched_paths": [
+          "Product: 波西米亚安息香淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 波西米亚安息香淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-lente-1",
+        "label": "沉静之水淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 沉静之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 沉静之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-de-neroli-1",
+        "label": "橙花香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 橙花香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 橙花香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:orpheon-eau-de-parfum-200ml-holiday",
+        "label": "典藏版奥费恩淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "奥费恩",
+        "price": "3300",
+        "price_range": "2000+",
+        "matched_paths": [
+          "Product: 典藏版奥费恩淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 典藏版奥费恩淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:fleur-de-peau-eau-de-parfum-200ml-holiday",
+        "label": "典藏版肌肤之花淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "肌肤之花",
+        "price": "3300",
+        "price_range": "2000+",
+        "matched_paths": [
+          "Product: 典藏版肌肤之花淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 典藏版肌肤之花淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-toilette-oyedo-50ml-1",
+        "label": "东京淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 东京淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 东京淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:oyedo-eau-de-toilette-1",
+        "label": "东京淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 东京淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 东京淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:do-son-eau-de-parfum-75ml-1",
+        "label": "杜桑淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "杜桑",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 杜桑淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 杜桑淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:do-son-eau-de-toilette-1",
+        "label": "杜桑淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "杜桑",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 杜桑淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 杜桑淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-do-son-50ml-2",
+        "label": "杜桑淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "杜桑",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 杜桑淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 杜桑淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-duelle-50ml-1",
+        "label": "杜耶尔 - 淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 杜耶尔 - 淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 杜耶尔 - 淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-duelle-eau-de-parfum-75ml-1",
+        "label": "杜耶尔淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 杜耶尔淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 杜耶尔淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-duelle-eau-de-toilette-1",
+        "label": "杜耶尔淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 杜耶尔淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 杜耶尔淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-des-sens-100ml-1",
+        "label": "感官之水淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "感官之水",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 感官之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 感官之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-toilette-eau-des-sens-50ml-1",
+        "label": "感官之水淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "感官之水",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 感官之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 感官之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-des-hesperides-1",
+        "label": "海丝佩拉蒂淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 海丝佩拉蒂淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 海丝佩拉蒂淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:fleur-de-peau-eau-de-parfum-1",
+        "label": "肌肤之花淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "肌肤之花",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 肌肤之花淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 肌肤之花淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:fleur-de-peau-eau-de-toilette-50ml-1",
+        "label": "肌肤之花淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "肌肤之花",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 肌肤之花淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 肌肤之花淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:fleur-de-peau-eau-de-toilette-100ml-1",
+        "label": "肌肤之花淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "肌肤之花",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 肌肤之花淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 肌肤之花淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-lierre-eau-de-toilette-2021",
+        "label": "利埃尔淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 利埃尔淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 利埃尔淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-rihla-eau-de-parfum-75ml",
+        "label": "旅行之水淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "2390",
+        "price_range": "2000+",
+        "matched_paths": [
+          "Product: 旅行之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 旅行之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-parfum-eau-de-minthe-2",
+        "label": "曼特淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 曼特淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 曼特淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-parfum-eau-rose-75ml",
+        "label": "玫瑰香调淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "玫瑰香调",
+        "collection_or_series": "玫瑰香调",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 玫瑰香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 玫瑰香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-rose-50ml-1",
+        "label": "玫瑰香调淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "玫瑰香调",
+        "collection_or_series": "玫瑰香调",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 玫瑰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 玫瑰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-rose-102",
+        "label": "玫瑰香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "玫瑰香调",
+        "collection_or_series": "玫瑰香调",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 玫瑰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 玫瑰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:oud-palao-eau-de-parfum-75ml-1",
+        "label": "帕劳乌木香调淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 帕劳乌木香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 帕劳乌木香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:edt-trois-fl-101",
+        "label": "三重水淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 三重水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 三重水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:34-boulevard-st-germain-eau-de-toilette-1",
+        "label": "圣日尔曼大道34号淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "圣日尔曼大道34号",
+        "price": "1500",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 圣日尔曼大道34号淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 圣日尔曼大道34号淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:tam-dao-eau-de-parfum-75ml-1",
+        "label": "谭道淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "谭道",
+        "collection_or_series": "谭道",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 谭道淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 谭道淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-tam-dao-50ml-1",
+        "label": "谭道淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "谭道",
+        "collection_or_series": "谭道",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 谭道淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 谭道淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:tam-dao-eau-de-toilette-1",
+        "label": "谭道淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "谭道",
+        "collection_or_series": "谭道",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 谭道淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 谭道淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-nabati-eau-de-parfum-75ml",
+        "label": "天堂花园之水淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "2390",
+        "price_range": "2000+",
+        "matched_paths": [
+          "Product: 天堂花园之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 天堂花园之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-geranium-odorata-102",
+        "label": "天竺葵香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 天竺葵香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 天竺葵香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:vetyverio-eau-de-parfum-75ml-1",
+        "label": "维堤里欧淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 维堤里欧淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 维堤里欧淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-toilette-vetyverio-50ml-1",
+        "label": "维堤里欧淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 维堤里欧淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 维堤里欧淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:edt-ml-101",
+        "label": "维堤里欧淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 维堤里欧淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 维堤里欧淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-parfum-volutes-2",
+        "label": "维路德淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 维路德淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 维路德淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:philosykos-eau-de-parfum-75ml-1",
+        "label": "希腊无花果香调淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "希腊无花果",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 希腊无花果香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-50ml-1",
+        "label": "希腊无花果香调淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "希腊无花果",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 希腊无花果香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-100ml-1",
+        "label": "希腊无花果香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "希腊无花果",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 希腊无花果香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 希腊无花果香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-ofresia-1",
+        "label": "小苍兰香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 小苍兰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 小苍兰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:tempo-eau-de-parfum-1",
+        "label": "旋律淡香精",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 旋律淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 旋律淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-moheli-101",
+        "label": "依兰香调淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 依兰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 依兰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:l-ombre-dans-l-eau-eau-de-parfum-75ml-1",
+        "label": "影中之水 - 淡香精",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香精",
+        "collection_or_series": "影中之水",
+        "price": "1650",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 影中之水 - 淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 影中之水 - 淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:l-ombre-dans-l-eau-eau-de-toilette-1",
+        "label": "影中之水 - 淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "影中之水",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 影中之水 - 淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 影中之水 - 淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:l-ombre-dans-l-eau-eau-toilette-1",
+        "label": "影中之水淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "淡香水",
+        "collection_or_series": "影中之水",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 影中之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 影中之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-papier-eau-de-toilette-50ml",
+        "label": "纸上淡香水",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "纸上",
+        "collection_or_series": "纸上",
+        "price": "1050",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 纸上淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 纸上淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      },
+      {
+        "product_id": "product:eau-papier-eau-de-toilette-100ml",
+        "label": "纸上淡香水",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "纸上",
+        "collection_or_series": "纸上",
+        "price": "1420",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 纸上淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 纸上淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_attribute_match_with_price_filter"
+      }
+    ],
+    "indirect_or_bundle_products": [
+      {
+        "product_id": "product:discovery-set-of-5-eaux-de-toilette-1",
+        "label": "淡香水礼盒五支装",
+        "product_type": "perfume",
+        "category": "个人香氛",
+        "subcategory": "个人香氛",
+        "collection_or_series": "",
+        "price": "1070",
+        "price_range": "1000-1999",
+        "matched_paths": [
+          "Product: 淡香水礼盒五支装 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 淡香水礼盒五支装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 个人香氛",
+          "Product: 淡香水礼盒五支装 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_matched_filter"
+      },
+      {
+        "product_id": "product:sum26cldarcn-set-1",
+        "label": "夏日惊喜礼盒（限量版）",
+        "product_type": "fragrance",
+        "category": "个人香氛",
+        "subcategory": "夏日限定系列",
+        "collection_or_series": "夏日护肤仪式",
+        "price": "2480",
+        "price_range": "2000+",
+        "matched_paths": [
+          "Product: 夏日惊喜礼盒（限量版） -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+          "Product: 夏日惊喜礼盒（限量版） -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ],
+        "post_filter_group": "indirect_or_bundle_products",
+        "post_filter_reason": "bundle_or_set_matched_filter"
+      }
+    ],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [],
+    "scent_notes": [],
+    "filter_evidence": [
+      {
+        "product_id": "product:orpheon-eau-de-parfum-75ml",
+        "label": "奥费恩淡香精",
+        "category_or_attribute_paths": [
+          "Product: 奥费恩淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 奥费恩淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:orpheon-eau-de-toilette-100ml",
+        "label": "奥费恩淡香水",
+        "category_or_attribute_paths": [
+          "Product: 奥费恩淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 奥费恩淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:olene-eau-de-toilette-100ml-1",
+        "label": "奥利恩淡香水",
+        "category_or_attribute_paths": [
+          "Product: 奥利恩淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 奥利恩淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:olene-eau-toilette-50ml-1",
+        "label": "奥利恩淡香水",
+        "category_or_attribute_paths": [
+          "Product: 奥利恩淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 奥利恩淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-capitale-eau-de-parfum-1",
+        "label": "巴黎之水淡香精",
+        "category_or_attribute_paths": [
+          "Product: 巴黎之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 巴黎之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:premo6100-de-parfum-100ml",
+        "label": "宝石之眼淡香精",
+        "category_or_attribute_paths": [
+          "Product: 宝石之眼淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 宝石之眼淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-lautre-1",
+        "label": "别样淡香水",
+        "category_or_attribute_paths": [
+          "Product: 别样淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 别样淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:benjoin-boheme-eau-de-parfum",
+        "label": "波西米亚安息香淡香精",
+        "category_or_attribute_paths": [
+          "Product: 波西米亚安息香淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 波西米亚安息香淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-lente-1",
+        "label": "沉静之水淡香水",
+        "category_or_attribute_paths": [
+          "Product: 沉静之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 沉静之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-de-neroli-1",
+        "label": "橙花香调淡香水",
+        "category_or_attribute_paths": [
+          "Product: 橙花香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 橙花香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:orpheon-eau-de-parfum-200ml-holiday",
+        "label": "典藏版奥费恩淡香精",
+        "category_or_attribute_paths": [
+          "Product: 典藏版奥费恩淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 典藏版奥费恩淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ]
+      },
+      {
+        "product_id": "product:fleur-de-peau-eau-de-parfum-200ml-holiday",
+        "label": "典藏版肌肤之花淡香精",
+        "category_or_attribute_paths": [
+          "Product: 典藏版肌肤之花淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 典藏版肌肤之花淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ]
+      },
+      {
+        "product_id": "product:eau-toilette-oyedo-50ml-1",
+        "label": "东京淡香水",
+        "category_or_attribute_paths": [
+          "Product: 东京淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 东京淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:oyedo-eau-de-toilette-1",
+        "label": "东京淡香水",
+        "category_or_attribute_paths": [
+          "Product: 东京淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 东京淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:do-son-eau-de-parfum-75ml-1",
+        "label": "杜桑淡香精",
+        "category_or_attribute_paths": [
+          "Product: 杜桑淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 杜桑淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:do-son-eau-de-toilette-1",
+        "label": "杜桑淡香水",
+        "category_or_attribute_paths": [
+          "Product: 杜桑淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 杜桑淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-do-son-50ml-2",
+        "label": "杜桑淡香水",
+        "category_or_attribute_paths": [
+          "Product: 杜桑淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 杜桑淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-duelle-50ml-1",
+        "label": "杜耶尔 - 淡香水",
+        "category_or_attribute_paths": [
+          "Product: 杜耶尔 - 淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 杜耶尔 - 淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-duelle-eau-de-parfum-75ml-1",
+        "label": "杜耶尔淡香精",
+        "category_or_attribute_paths": [
+          "Product: 杜耶尔淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 杜耶尔淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-duelle-eau-de-toilette-1",
+        "label": "杜耶尔淡香水",
+        "category_or_attribute_paths": [
+          "Product: 杜耶尔淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 杜耶尔淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-des-sens-100ml-1",
+        "label": "感官之水淡香水",
+        "category_or_attribute_paths": [
+          "Product: 感官之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 感官之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-toilette-eau-des-sens-50ml-1",
+        "label": "感官之水淡香水",
+        "category_or_attribute_paths": [
+          "Product: 感官之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 感官之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-des-hesperides-1",
+        "label": "海丝佩拉蒂淡香水",
+        "category_or_attribute_paths": [
+          "Product: 海丝佩拉蒂淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 海丝佩拉蒂淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:fleur-de-peau-eau-de-parfum-1",
+        "label": "肌肤之花淡香精",
+        "category_or_attribute_paths": [
+          "Product: 肌肤之花淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 肌肤之花淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:fleur-de-peau-eau-de-toilette-50ml-1",
+        "label": "肌肤之花淡香水",
+        "category_or_attribute_paths": [
+          "Product: 肌肤之花淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 肌肤之花淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:fleur-de-peau-eau-de-toilette-100ml-1",
+        "label": "肌肤之花淡香水",
+        "category_or_attribute_paths": [
+          "Product: 肌肤之花淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 肌肤之花淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-lierre-eau-de-toilette-2021",
+        "label": "利埃尔淡香水",
+        "category_or_attribute_paths": [
+          "Product: 利埃尔淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 利埃尔淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-rihla-eau-de-parfum-75ml",
+        "label": "旅行之水淡香精",
+        "category_or_attribute_paths": [
+          "Product: 旅行之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 旅行之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-parfum-eau-de-minthe-2",
+        "label": "曼特淡香精",
+        "category_or_attribute_paths": [
+          "Product: 曼特淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 曼特淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-parfum-eau-rose-75ml",
+        "label": "玫瑰香调淡香精",
+        "category_or_attribute_paths": [
+          "Product: 玫瑰香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 玫瑰香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-rose-50ml-1",
+        "label": "玫瑰香调淡香水",
+        "category_or_attribute_paths": [
+          "Product: 玫瑰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 玫瑰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-rose-102",
+        "label": "玫瑰香调淡香水",
+        "category_or_attribute_paths": [
+          "Product: 玫瑰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 玫瑰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:oud-palao-eau-de-parfum-75ml-1",
+        "label": "帕劳乌木香调淡香精",
+        "category_or_attribute_paths": [
+          "Product: 帕劳乌木香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 帕劳乌木香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:edt-trois-fl-101",
+        "label": "三重水淡香水",
+        "category_or_attribute_paths": [
+          "Product: 三重水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 三重水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:34-boulevard-st-germain-eau-de-toilette-1",
+        "label": "圣日尔曼大道34号淡香水",
+        "category_or_attribute_paths": [
+          "Product: 圣日尔曼大道34号淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 圣日尔曼大道34号淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:tam-dao-eau-de-parfum-75ml-1",
+        "label": "谭道淡香精",
+        "category_or_attribute_paths": [
+          "Product: 谭道淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 谭道淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-tam-dao-50ml-1",
+        "label": "谭道淡香水",
+        "category_or_attribute_paths": [
+          "Product: 谭道淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 谭道淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:tam-dao-eau-de-toilette-1",
+        "label": "谭道淡香水",
+        "category_or_attribute_paths": [
+          "Product: 谭道淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 谭道淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-nabati-eau-de-parfum-75ml",
+        "label": "天堂花园之水淡香精",
+        "category_or_attribute_paths": [
+          "Product: 天堂花园之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 天堂花园之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-geranium-odorata-102",
+        "label": "天竺葵香调淡香水",
+        "category_or_attribute_paths": [
+          "Product: 天竺葵香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 天竺葵香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:vetyverio-eau-de-parfum-75ml-1",
+        "label": "维堤里欧淡香精",
+        "category_or_attribute_paths": [
+          "Product: 维堤里欧淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 维堤里欧淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-toilette-vetyverio-50ml-1",
+        "label": "维堤里欧淡香水",
+        "category_or_attribute_paths": [
+          "Product: 维堤里欧淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 维堤里欧淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:edt-ml-101",
+        "label": "维堤里欧淡香水",
+        "category_or_attribute_paths": [
+          "Product: 维堤里欧淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 维堤里欧淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-parfum-volutes-2",
+        "label": "维路德淡香精",
+        "category_or_attribute_paths": [
+          "Product: 维路德淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 维路德淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:philosykos-eau-de-parfum-75ml-1",
+        "label": "希腊无花果香调淡香精",
+        "category_or_attribute_paths": [
+          "Product: 希腊无花果香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 希腊无花果香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-50ml-1",
+        "label": "希腊无花果香调淡香水",
+        "category_or_attribute_paths": [
+          "Product: 希腊无花果香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 希腊无花果香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-philosykos-100ml-1",
+        "label": "希腊无花果香调淡香水",
+        "category_or_attribute_paths": [
+          "Product: 希腊无花果香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 希腊无花果香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-ofresia-1",
+        "label": "小苍兰香调淡香水",
+        "category_or_attribute_paths": [
+          "Product: 小苍兰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 小苍兰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:tempo-eau-de-parfum-1",
+        "label": "旋律淡香精",
+        "category_or_attribute_paths": [
+          "Product: 旋律淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 旋律淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-de-toilette-eau-moheli-101",
+        "label": "依兰香调淡香水",
+        "category_or_attribute_paths": [
+          "Product: 依兰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 依兰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:l-ombre-dans-l-eau-eau-de-parfum-75ml-1",
+        "label": "影中之水 - 淡香精",
+        "category_or_attribute_paths": [
+          "Product: 影中之水 - 淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 影中之水 - 淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:l-ombre-dans-l-eau-eau-de-toilette-1",
+        "label": "影中之水 - 淡香水",
+        "category_or_attribute_paths": [
+          "Product: 影中之水 - 淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 影中之水 - 淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:l-ombre-dans-l-eau-eau-toilette-1",
+        "label": "影中之水淡香水",
+        "category_or_attribute_paths": [
+          "Product: 影中之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 影中之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-papier-eau-de-toilette-50ml",
+        "label": "纸上淡香水",
+        "category_or_attribute_paths": [
+          "Product: 纸上淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 纸上淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      },
+      {
+        "product_id": "product:eau-papier-eau-de-toilette-100ml",
+        "label": "纸上淡香水",
+        "category_or_attribute_paths": [
+          "Product: 纸上淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛"
+        ],
+        "price_paths": [
+          "Product: 纸上淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+        ]
+      }
+    ],
+    "evidence_paths": [
+      "Product: 典藏版奥费恩淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 典藏版奥费恩淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 典藏版肌肤之花淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 典藏版肌肤之花淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 宝石之眼淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 宝石之眼淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 夏日惊喜礼盒（限量版） -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 夏日惊喜礼盒（限量版） -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 波西米亚安息香淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 波西米亚安息香淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 旅行之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 旅行之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 天堂花园之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 天堂花园之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 奥费恩淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 奥费恩淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 巴黎之水淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 巴黎之水淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 杜桑淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 杜桑淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 杜耶尔淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 杜耶尔淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 肌肤之花淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 肌肤之花淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 曼特淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 曼特淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 玫瑰香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 玫瑰香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 帕劳乌木香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 帕劳乌木香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 谭道淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 谭道淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 维堤里欧淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 维堤里欧淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 维路德淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 维路德淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 希腊无花果香调淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 希腊无花果香调淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 旋律淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 旋律淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 影中之水 - 淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 影中之水 - 淡香精 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 圣日尔曼大道34号淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 圣日尔曼大道34号淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 奥费恩淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 奥费恩淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 奥利恩淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 奥利恩淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 别样淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 别样淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 沉静之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 沉静之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 橙花香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 橙花香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 东京淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 东京淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 杜桑淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 杜桑淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 杜耶尔淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 杜耶尔淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 感官之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 感官之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 海丝佩拉蒂淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 海丝佩拉蒂淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 肌肤之花淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 肌肤之花淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 利埃尔淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 利埃尔淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 玫瑰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 玫瑰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 三重水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 三重水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 谭道淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 谭道淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 天竺葵香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 天竺葵香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 维堤里欧淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 维堤里欧淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 希腊无花果香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 希腊无花果香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 小苍兰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 小苍兰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 依兰香调淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 依兰香调淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 影中之水 - 淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 影中之水 - 淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 纸上淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 纸上淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 淡香水礼盒五支装 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 淡香水礼盒五支装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 个人香氛",
+      "Product: 淡香水礼盒五支装 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 杜耶尔 - 淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 杜耶尔 - 淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999",
+      "Product: 影中之水淡香水 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 影中之水淡香水 -> IN_PRICE_RANGE -> PriceRange: 1000-1999"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 10,
+    "query": "哪些商品同时包含无花果和雪松？",
+    "intent": "products_with_all_scent_notes",
+    "matched_entities": [
+      {
+        "id": "scent-note:无花果",
+        "label": "无花果",
+        "type": "ScentNote",
+        "anchor_text": "无花果",
+        "match_mode": "exact",
+        "score": 1090
+      },
+      {
+        "id": "scent-note:雪松",
+        "label": "雪松",
+        "type": "ScentNote",
+        "anchor_text": "雪松",
+        "match_mode": "exact",
+        "score": 1090
+      }
+    ],
+    "direct_products": [
+      {
+        "product_id": "product:multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "家居香氛",
+        "collection_or_series": "",
+        "price": "370",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 雪松"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:refill-multi-surface-cleaner-with-vinegar-500ml",
+        "label": "多用途家居清洁喷雾补充装",
+        "product_type": "home fragrance",
+        "category": "室内香氛",
+        "subcategory": "补充装",
+        "collection_or_series": "",
+        "price": "250",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 雪松"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      },
+      {
+        "product_id": "product:figuier-fig-tree-scented-oval",
+        "label": "希腊无花果室内香氛蜡",
+        "product_type": "candle",
+        "category": "室内香氛",
+        "subcategory": "无花果",
+        "collection_or_series": "无花果",
+        "price": "580",
+        "price_range": "",
+        "matched_paths": [
+          "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+          "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 雪松"
+        ],
+        "post_filter_group": "direct_products",
+        "post_filter_reason": "direct_primary_relation_match"
+      }
+    ],
+    "indirect_or_bundle_products": [],
+    "supporting_results": [],
+    "uncertain_results": [],
+    "target_product": [],
+    "scent_notes": [],
+    "filter_evidence": [],
+    "evidence_paths": [
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 雪松",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 雪松",
+      "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 雪松"
+    ],
+    "warnings": []
+  }
+]

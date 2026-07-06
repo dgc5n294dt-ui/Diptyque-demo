@@ -1,0 +1,437 @@
+[
+  {
+    "id": 1,
+    "query": "哪些产品含有无花果香调？",
+    "intent": "products_by_entity",
+    "answer": "直接命中的商品有：超大号香氛蜡烛-无花果（candle / 室内香氛 / 3400元）、大号香氛蜡烛-无花果（candle / 夏日气息家居香氛 / 1800元）、多用途家居清洁喷雾（home fragrance / 室内香氛 / 370元）、多用途家居清洁喷雾补充装（home fragrance / 室内香氛 / 250元）、迷你香氛蜡烛-无花果（candle / 家居香氛 / 370元）、圣日尔曼大道34号 - 香氛皂（perfume / 圣日尔曼大道34号 / 370元）、圣日尔曼大道34号扩香精（candle / 圣日尔曼大道34号 / 1620元）、圣日尔曼大道34号扩香精补充瓶（candle / 圣日尔曼大道34号 / 500元）。 礼盒、套装或组合类结果有：淡香水礼盒五支装（perfume / 个人香氛 / 1070元）、迷你香氛蜡烛礼盒 - 甄选礼赠（home fragrance / 家居香氛 / 1110元）、圣日尔曼大道34号车载扩香器香氛套装（candle / 圣日尔曼大道34号 / 1040元）、无花果车载扩香器香氛套装（candle / 室内香氛 / 1040元）。",
+    "answer_sections": [
+      "直接命中的商品有：超大号香氛蜡烛-无花果（candle / 室内香氛 / 3400元）、大号香氛蜡烛-无花果（candle / 夏日气息家居香氛 / 1800元）、多用途家居清洁喷雾（home fragrance / 室内香氛 / 370元）、多用途家居清洁喷雾补充装（home fragrance / 室内香氛 / 250元）、迷你香氛蜡烛-无花果（candle / 家居香氛 / 370元）、圣日尔曼大道34号 - 香氛皂（perfume / 圣日尔曼大道34号 / 370元）、圣日尔曼大道34号扩香精（candle / 圣日尔曼大道34号 / 1620元）、圣日尔曼大道34号扩香精补充瓶（candle / 圣日尔曼大道34号 / 500元）。",
+      "礼盒、套装或组合类结果有：淡香水礼盒五支装（perfume / 个人香氛 / 1070元）、迷你香氛蜡烛礼盒 - 甄选礼赠（home fragrance / 家居香氛 / 1110元）、圣日尔曼大道34号车载扩香器香氛套装（candle / 圣日尔曼大道34号 / 1040元）、无花果车载扩香器香氛套装（candle / 室内香氛 / 1040元）。"
+    ],
+    "used_direct_products": [
+      "超大号香氛蜡烛-无花果",
+      "大号香氛蜡烛-无花果",
+      "多用途家居清洁喷雾",
+      "多用途家居清洁喷雾补充装",
+      "迷你香氛蜡烛-无花果",
+      "圣日尔曼大道34号 - 香氛皂",
+      "圣日尔曼大道34号扩香精",
+      "圣日尔曼大道34号扩香精补充瓶",
+      "圣日尔曼大道34号扩香器香氛补充包",
+      "圣日尔曼大道34号室内喷雾",
+      "圣日尔曼大道34号室内香氛蜡",
+      "无花果 - 室内喷雾",
+      "无花果室内扩香摆件补充装",
+      "希腊无花果扩香精",
+      "希腊无花果扩香精补充瓶",
+      "希腊无花果扩香器香氛补充包",
+      "希腊无花果室内香氛蜡",
+      "希腊无花果香调 - 润肤乳",
+      "希腊无花果香调淡香精",
+      "希腊无花果香调淡香水",
+      "希腊无花果香调淡香水",
+      "希腊无花果香调发香喷雾",
+      "希腊无花果香调洁肤露",
+      "香氛蜡烛-无花果",
+      "中号香氛蜡烛-圣日尔曼大道34号",
+      "中号香氛蜡烛-无花果"
+    ],
+    "used_indirect_or_bundle_products": [
+      "淡香水礼盒五支装",
+      "迷你香氛蜡烛礼盒 - 甄选礼赠",
+      "圣日尔曼大道34号车载扩香器香氛套装",
+      "无花果车载扩香器香氛套装"
+    ],
+    "used_scent_notes": [],
+    "evidence_paths": [
+      "Product: 超大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 迷你香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 圣日尔曼大道34号 - 香氛皂 -> HAS_SCENT_NOTE -> ScentNote: 无花果"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 2,
+    "query": "多用途家居清洁喷雾有哪些香调？",
+    "intent": "product_to_scent_notes",
+    "answer": "检索目标是：多用途家居清洁喷雾。 当前图谱里关联到的香调包括：除垢、果香调、清洁、清洁、去油脂、除垢、去油脂、无花果、雪松、薰衣草。",
+    "answer_sections": [
+      "检索目标是：多用途家居清洁喷雾。",
+      "当前图谱里关联到的香调包括：除垢、果香调、清洁、清洁、去油脂、除垢、去油脂、无花果、雪松、薰衣草。"
+    ],
+    "used_direct_products": [
+      "多用途家居清洁喷雾"
+    ],
+    "used_indirect_or_bundle_products": [],
+    "used_scent_notes": [
+      "除垢",
+      "果香调",
+      "清洁",
+      "清洁、去油脂、除垢",
+      "去油脂",
+      "无花果",
+      "雪松",
+      "薰衣草"
+    ],
+    "evidence_paths": [
+      "Matched product label -> Product: 多用途家居清洁喷雾",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 除垢",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 果香调",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 清洁",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 清洁、去油脂、除垢",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 去油脂",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 雪松"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 3,
+    "query": "有哪些含有薰衣草香调的商品？",
+    "intent": "products_by_entity",
+    "answer": "直接命中的商品有：多用途家居清洁喷雾（home fragrance / 室内香氛 / 370元）、多用途家居清洁喷雾补充装（home fragrance / 室内香氛 / 250元）、迷你香氛蜡烛-薰衣草（candle / 家居香氛 / 370元）、柔肤手部清洁露（home fragrance / 手部护肤 / 600元）、柔肤手部清洁露补充装（home fragrance / 手部护肤 / 400元）、香氛蜡烛-薰衣草（candle / 家居香氛 / 630元）、雪松木衣物香氛陶瓷 - 家居清洁护理系列（home fragrance / 室内香氛 / 420元）、雪松木衣物香氛陶瓷补充装（home fragrance / 室内香氛 / 190元）。",
+    "answer_sections": [
+      "直接命中的商品有：多用途家居清洁喷雾（home fragrance / 室内香氛 / 370元）、多用途家居清洁喷雾补充装（home fragrance / 室内香氛 / 250元）、迷你香氛蜡烛-薰衣草（candle / 家居香氛 / 370元）、柔肤手部清洁露（home fragrance / 手部护肤 / 600元）、柔肤手部清洁露补充装（home fragrance / 手部护肤 / 400元）、香氛蜡烛-薰衣草（candle / 家居香氛 / 630元）、雪松木衣物香氛陶瓷 - 家居清洁护理系列（home fragrance / 室内香氛 / 420元）、雪松木衣物香氛陶瓷补充装（home fragrance / 室内香氛 / 190元）。"
+    ],
+    "used_direct_products": [
+      "多用途家居清洁喷雾",
+      "多用途家居清洁喷雾补充装",
+      "迷你香氛蜡烛-薰衣草",
+      "柔肤手部清洁露",
+      "柔肤手部清洁露补充装",
+      "香氛蜡烛-薰衣草",
+      "雪松木衣物香氛陶瓷 - 家居清洁护理系列",
+      "雪松木衣物香氛陶瓷补充装"
+    ],
+    "used_indirect_or_bundle_products": [],
+    "used_scent_notes": [],
+    "evidence_paths": [
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 迷你香氛蜡烛-薰衣草 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 柔肤手部清洁露 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 柔肤手部清洁露补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 香氛蜡烛-薰衣草 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 雪松木衣物香氛陶瓷 - 家居清洁护理系列 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草",
+      "Product: 雪松木衣物香氛陶瓷补充装 -> HAS_SCENT_NOTE -> ScentNote: 薰衣草"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 4,
+    "query": "希腊无花果香调有哪些产品？",
+    "intent": "products_by_entity",
+    "answer": "直接命中的商品有：无花果室内扩香摆件补充装（candle / 室内扩香摆件 / 840元）、希腊无花果扩香精（candle / 室内香氛 / 1620元）、希腊无花果扩香精补充瓶（candle / 室内香氛 / 500元）、希腊无花果扩香器香氛补充包（candle / 室内香氛 / 450元）、希腊无花果室内香氛蜡（candle / 室内香氛 / 580元）、希腊无花果香调 - 润肤乳（body care / 希腊无花果 / 540元）、希腊无花果香调淡香精（fragrance / 个人香氛 / 1650元）、希腊无花果香调淡香水（perfume / 个人香氛 / 1050元）。 礼盒、套装或组合类结果有：淡香水礼盒五支装（perfume / 个人香氛 / 1070元）、无花果车载扩香器香氛套装（candle / 室内香氛 / 1040元）。",
+    "answer_sections": [
+      "直接命中的商品有：无花果室内扩香摆件补充装（candle / 室内扩香摆件 / 840元）、希腊无花果扩香精（candle / 室内香氛 / 1620元）、希腊无花果扩香精补充瓶（candle / 室内香氛 / 500元）、希腊无花果扩香器香氛补充包（candle / 室内香氛 / 450元）、希腊无花果室内香氛蜡（candle / 室内香氛 / 580元）、希腊无花果香调 - 润肤乳（body care / 希腊无花果 / 540元）、希腊无花果香调淡香精（fragrance / 个人香氛 / 1650元）、希腊无花果香调淡香水（perfume / 个人香氛 / 1050元）。",
+      "礼盒、套装或组合类结果有：淡香水礼盒五支装（perfume / 个人香氛 / 1070元）、无花果车载扩香器香氛套装（candle / 室内香氛 / 1040元）。"
+    ],
+    "used_direct_products": [
+      "无花果室内扩香摆件补充装",
+      "希腊无花果扩香精",
+      "希腊无花果扩香精补充瓶",
+      "希腊无花果扩香器香氛补充包",
+      "希腊无花果室内香氛蜡",
+      "希腊无花果香调 - 润肤乳",
+      "希腊无花果香调淡香精",
+      "希腊无花果香调淡香水",
+      "希腊无花果香调淡香水",
+      "希腊无花果香调发香喷雾",
+      "希腊无花果香调洁肤露"
+    ],
+    "used_indirect_or_bundle_products": [
+      "淡香水礼盒五支装",
+      "无花果车载扩香器香氛套装"
+    ],
+    "used_scent_notes": [],
+    "evidence_paths": [
+      "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 无花果车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 无花果室内扩香摆件补充装 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果扩香精 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果扩香精补充瓶 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果扩香器香氛补充包 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 希腊无花果",
+      "Product: 希腊无花果香调 - 润肤乳 -> BELONGS_TO_CATEGORY -> Category: 希腊无花果"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 5,
+    "query": "圣日尔曼大道34号有哪些相关商品？",
+    "intent": "products_by_entity",
+    "answer": "直接命中的商品有：超大号香氛蜡烛-圣日尔曼大道34号（candle / 圣日尔曼大道34号 / 3400元）、大号香氛蜡烛-圣日尔曼大道34号（candle / 圣日尔曼大道34号 / 1800元）、圣日尔曼大道34号 - 香氛皂（perfume / 圣日尔曼大道34号 / 370元）、圣日尔曼大道34号淡香精（fragrance / 圣日尔曼大道34号 / 1840元）、圣日尔曼大道34号淡香水（fragrance / 个人香氛 / 1500元）、圣日尔曼大道34号扩香精（candle / 圣日尔曼大道34号 / 1620元）、圣日尔曼大道34号扩香精补充瓶（candle / 圣日尔曼大道34号 / 500元）、圣日尔曼大道34号扩香器香氛补充包（candle / 圣日尔曼大道34号 / 450元）。 礼盒、套装或组合类结果有：圣日尔曼大道34号车载扩香器香氛套装（candle / 圣日尔曼大道34号 / 1040元）。",
+    "answer_sections": [
+      "直接命中的商品有：超大号香氛蜡烛-圣日尔曼大道34号（candle / 圣日尔曼大道34号 / 3400元）、大号香氛蜡烛-圣日尔曼大道34号（candle / 圣日尔曼大道34号 / 1800元）、圣日尔曼大道34号 - 香氛皂（perfume / 圣日尔曼大道34号 / 370元）、圣日尔曼大道34号淡香精（fragrance / 圣日尔曼大道34号 / 1840元）、圣日尔曼大道34号淡香水（fragrance / 个人香氛 / 1500元）、圣日尔曼大道34号扩香精（candle / 圣日尔曼大道34号 / 1620元）、圣日尔曼大道34号扩香精补充瓶（candle / 圣日尔曼大道34号 / 500元）、圣日尔曼大道34号扩香器香氛补充包（candle / 圣日尔曼大道34号 / 450元）。",
+      "礼盒、套装或组合类结果有：圣日尔曼大道34号车载扩香器香氛套装（candle / 圣日尔曼大道34号 / 1040元）。"
+    ],
+    "used_direct_products": [
+      "超大号香氛蜡烛-圣日尔曼大道34号",
+      "大号香氛蜡烛-圣日尔曼大道34号",
+      "圣日尔曼大道34号 - 香氛皂",
+      "圣日尔曼大道34号淡香精",
+      "圣日尔曼大道34号淡香水",
+      "圣日尔曼大道34号扩香精",
+      "圣日尔曼大道34号扩香精补充瓶",
+      "圣日尔曼大道34号扩香器香氛补充包",
+      "圣日尔曼大道34号室内扩香摆件补充瓶",
+      "圣日尔曼大道34号室内扩香摆件补充装",
+      "圣日尔曼大道34号室内喷雾",
+      "圣日尔曼大道34号室内香氛蜡",
+      "中号香氛蜡烛-圣日尔曼大道34号"
+    ],
+    "used_indirect_or_bundle_products": [
+      "圣日尔曼大道34号车载扩香器香氛套装"
+    ],
+    "used_scent_notes": [],
+    "evidence_paths": [
+      "Product: 超大号香氛蜡烛-圣日尔曼大道34号 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 超大号香氛蜡烛-圣日尔曼大道34号 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 大号香氛蜡烛-圣日尔曼大道34号 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 大号香氛蜡烛-圣日尔曼大道34号 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号 - 香氛皂 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号 - 香氛皂 -> PART_OF_COLLECTION -> CollectionOrSeries: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> BELONGS_TO_CATEGORY -> Category: 圣日尔曼大道34号",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> HAS_SCENT_NOTE -> ScentNote: 圣日尔曼大道34号"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 6,
+    "query": "迷你香氛蜡烛礼盒包含哪些香调？",
+    "intent": "product_to_scent_notes",
+    "answer": "检索目标是：迷你香氛蜡烛礼盒 - 甄选礼赠、迷你香氛蜡烛礼盒-5只装（限量版）。 当前图谱里关联到的香调包括：大黄、黑醋栗、黑芝麻、浆果、咖啡、玫瑰、玫瑰、无花果树、浆果、无花果、无花果树、荨麻草、紫苏。",
+    "answer_sections": [
+      "检索目标是：迷你香氛蜡烛礼盒 - 甄选礼赠、迷你香氛蜡烛礼盒-5只装（限量版）。",
+      "当前图谱里关联到的香调包括：大黄、黑醋栗、黑芝麻、浆果、咖啡、玫瑰、玫瑰、无花果树、浆果、无花果、无花果树、荨麻草、紫苏。"
+    ],
+    "used_direct_products": [
+      "迷你香氛蜡烛礼盒 - 甄选礼赠",
+      "迷你香氛蜡烛礼盒-5只装（限量版）"
+    ],
+    "used_indirect_or_bundle_products": [],
+    "used_scent_notes": [
+      "大黄",
+      "黑醋栗",
+      "黑芝麻",
+      "浆果",
+      "咖啡",
+      "玫瑰",
+      "玫瑰、无花果树、浆果",
+      "无花果",
+      "无花果树",
+      "荨麻草",
+      "紫苏"
+    ],
+    "evidence_paths": [
+      "Matched product label -> Product: 迷你香氛蜡烛礼盒 - 甄选礼赠",
+      "Matched product label -> Product: 迷你香氛蜡烛礼盒-5只装（限量版）",
+      "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 大黄",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 黑醋栗",
+      "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 黑芝麻",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 浆果",
+      "Product: 迷你香氛蜡烛礼盒-5只装（限量版） -> HAS_SCENT_NOTE -> ScentNote: 咖啡",
+      "Product: 迷你香氛蜡烛礼盒 - 甄选礼赠 -> HAS_SCENT_NOTE -> ScentNote: 玫瑰"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 7,
+    "query": "有哪些车载扩香器相关商品？",
+    "intent": "products_by_entity",
+    "answer": "直接命中的商品有：橙花 - 车载扩香器香氛套装（home fragrance / 室内香氛 / 1040元）、含羞草车载扩香器香氛套装（candle / 含羞草 / 1040元）、浆果香车载扩香器香氛套装（candle / 室内香氛 / 1040元）、玫瑰车载扩香器香氛套装（candle / 室内香氛 / 1040元）、圣日尔曼大道34号车载扩香器香氛套装（candle / 圣日尔曼大道34号 / 1040元）、无花果车载扩香器香氛套装（candle / 室内香氛 / 1040元）。",
+    "answer_sections": [
+      "直接命中的商品有：橙花 - 车载扩香器香氛套装（home fragrance / 室内香氛 / 1040元）、含羞草车载扩香器香氛套装（candle / 含羞草 / 1040元）、浆果香车载扩香器香氛套装（candle / 室内香氛 / 1040元）、玫瑰车载扩香器香氛套装（candle / 室内香氛 / 1040元）、圣日尔曼大道34号车载扩香器香氛套装（candle / 圣日尔曼大道34号 / 1040元）、无花果车载扩香器香氛套装（candle / 室内香氛 / 1040元）。"
+    ],
+    "used_direct_products": [
+      "橙花 - 车载扩香器香氛套装",
+      "含羞草车载扩香器香氛套装",
+      "浆果香车载扩香器香氛套装",
+      "玫瑰车载扩香器香氛套装",
+      "圣日尔曼大道34号车载扩香器香氛套装",
+      "无花果车载扩香器香氛套装"
+    ],
+    "used_indirect_or_bundle_products": [],
+    "used_scent_notes": [],
+    "evidence_paths": [
+      "Product: 橙花 - 车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 含羞草车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 浆果香车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 玫瑰车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 圣日尔曼大道34号车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器",
+      "Product: 无花果车载扩香器香氛套装 -> BELONGS_TO_SUBCATEGORY -> Subcategory: 车载扩香器"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 8,
+    "query": "无花果香调里哪些是蜡烛，哪些是室内喷雾，哪些是身体护理？",
+    "intent": "group_products_by_facets",
+    "answer": "蜡烛类有：超大号香氛蜡烛-无花果、大号香氛蜡烛-无花果、迷你香氛蜡烛-无花果、香氛蜡烛-无花果、中号香氛蜡烛-圣日尔曼大道34号、中号香氛蜡烛-无花果。 室内喷雾类有：圣日尔曼大道34号室内喷雾、无花果 - 室内喷雾。 身体护理类有：圣日尔曼大道34号 - 香氛皂、希腊无花果香调 - 润肤乳、希腊无花果香调洁肤露。",
+    "answer_sections": [
+      "蜡烛类有：超大号香氛蜡烛-无花果、大号香氛蜡烛-无花果、迷你香氛蜡烛-无花果、香氛蜡烛-无花果、中号香氛蜡烛-圣日尔曼大道34号、中号香氛蜡烛-无花果。",
+      "室内喷雾类有：圣日尔曼大道34号室内喷雾、无花果 - 室内喷雾。",
+      "身体护理类有：圣日尔曼大道34号 - 香氛皂、希腊无花果香调 - 润肤乳、希腊无花果香调洁肤露。"
+    ],
+    "used_direct_products": [
+      "超大号香氛蜡烛-无花果",
+      "大号香氛蜡烛-无花果",
+      "多用途家居清洁喷雾",
+      "多用途家居清洁喷雾补充装",
+      "迷你香氛蜡烛-无花果",
+      "圣日尔曼大道34号 - 香氛皂",
+      "圣日尔曼大道34号扩香精",
+      "圣日尔曼大道34号扩香精补充瓶",
+      "圣日尔曼大道34号扩香器香氛补充包",
+      "圣日尔曼大道34号室内喷雾",
+      "圣日尔曼大道34号室内香氛蜡",
+      "无花果 - 室内喷雾",
+      "无花果室内扩香摆件补充装",
+      "希腊无花果扩香精",
+      "希腊无花果扩香精补充瓶",
+      "希腊无花果扩香器香氛补充包",
+      "希腊无花果室内香氛蜡",
+      "希腊无花果香调 - 润肤乳",
+      "希腊无花果香调淡香精",
+      "希腊无花果香调淡香水",
+      "希腊无花果香调淡香水",
+      "希腊无花果香调发香喷雾",
+      "希腊无花果香调洁肤露",
+      "香氛蜡烛-无花果",
+      "中号香氛蜡烛-圣日尔曼大道34号",
+      "中号香氛蜡烛-无花果"
+    ],
+    "used_indirect_or_bundle_products": [
+      "淡香水礼盒五支装",
+      "迷你香氛蜡烛礼盒 - 甄选礼赠",
+      "圣日尔曼大道34号车载扩香器香氛套装",
+      "无花果车载扩香器香氛套装"
+    ],
+    "used_scent_notes": [],
+    "evidence_paths": [
+      "Product: 超大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 超大号香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 大号香氛蜡烛-无花果 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 大号香氛蜡烛-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果",
+      "Product: 淡香水礼盒五支装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 风景画陶瓷托盘-无花果 -> PART_OF_COLLECTION -> CollectionOrSeries: 无花果"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 9,
+    "query": "有哪些1000元以上的个人香氛？",
+    "intent": "filtered_products",
+    "answer": "这些结果同时满足“个人香氛”以及价格过滤条件。 直接结果有：奥费恩淡香精（fragrance / 个人香氛 / 1650元）、奥费恩淡香水（fragrance / 个人香氛 / 1420元）、奥利恩淡香水（fragrance / 个人香氛 / 1420元）、奥利恩淡香水（perfume / 个人香氛 / 1050元）、巴黎之水淡香精（fragrance / 个人香氛 / 1650元）、宝石之眼淡香精（fragrance / 个人香氛 / 2700元）、别样淡香水（fragrance / 个人香氛 / 1420元）、波西米亚安息香淡香精（fragrance / 个人香氛 / 2390元）。 另外，礼盒/套装类结果有：淡香水礼盒五支装（perfume / 个人香氛 / 1070元）、夏日惊喜礼盒（限量版）（fragrance / 个人香氛 / 2480元）。",
+    "answer_sections": [
+      "这些结果同时满足“个人香氛”以及价格过滤条件。",
+      "直接结果有：奥费恩淡香精（fragrance / 个人香氛 / 1650元）、奥费恩淡香水（fragrance / 个人香氛 / 1420元）、奥利恩淡香水（fragrance / 个人香氛 / 1420元）、奥利恩淡香水（perfume / 个人香氛 / 1050元）、巴黎之水淡香精（fragrance / 个人香氛 / 1650元）、宝石之眼淡香精（fragrance / 个人香氛 / 2700元）、别样淡香水（fragrance / 个人香氛 / 1420元）、波西米亚安息香淡香精（fragrance / 个人香氛 / 2390元）。",
+      "另外，礼盒/套装类结果有：淡香水礼盒五支装（perfume / 个人香氛 / 1070元）、夏日惊喜礼盒（限量版）（fragrance / 个人香氛 / 2480元）。"
+    ],
+    "used_direct_products": [
+      "奥费恩淡香精",
+      "奥费恩淡香水",
+      "奥利恩淡香水",
+      "奥利恩淡香水",
+      "巴黎之水淡香精",
+      "宝石之眼淡香精",
+      "别样淡香水",
+      "波西米亚安息香淡香精",
+      "沉静之水淡香水",
+      "橙花香调淡香水",
+      "典藏版奥费恩淡香精",
+      "典藏版肌肤之花淡香精",
+      "东京淡香水",
+      "东京淡香水",
+      "杜桑淡香精",
+      "杜桑淡香水",
+      "杜桑淡香水",
+      "杜耶尔 - 淡香水",
+      "杜耶尔淡香精",
+      "杜耶尔淡香水",
+      "感官之水淡香水",
+      "感官之水淡香水",
+      "海丝佩拉蒂淡香水",
+      "肌肤之花淡香精",
+      "肌肤之花淡香水",
+      "肌肤之花淡香水",
+      "利埃尔淡香水",
+      "旅行之水淡香精",
+      "曼特淡香精",
+      "玫瑰香调淡香精",
+      "玫瑰香调淡香水",
+      "玫瑰香调淡香水",
+      "帕劳乌木香调淡香精",
+      "三重水淡香水",
+      "圣日尔曼大道34号淡香水",
+      "谭道淡香精",
+      "谭道淡香水",
+      "谭道淡香水",
+      "天堂花园之水淡香精",
+      "天竺葵香调淡香水",
+      "维堤里欧淡香精",
+      "维堤里欧淡香水",
+      "维堤里欧淡香水",
+      "维路德淡香精",
+      "希腊无花果香调淡香精",
+      "希腊无花果香调淡香水",
+      "希腊无花果香调淡香水",
+      "小苍兰香调淡香水",
+      "旋律淡香精",
+      "依兰香调淡香水",
+      "影中之水 - 淡香精",
+      "影中之水 - 淡香水",
+      "影中之水淡香水",
+      "纸上淡香水",
+      "纸上淡香水"
+    ],
+    "used_indirect_or_bundle_products": [
+      "淡香水礼盒五支装",
+      "夏日惊喜礼盒（限量版）"
+    ],
+    "used_scent_notes": [],
+    "evidence_paths": [
+      "Product: 典藏版奥费恩淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 典藏版奥费恩淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 典藏版肌肤之花淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 典藏版肌肤之花淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 宝石之眼淡香精 -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 宝石之眼淡香精 -> IN_PRICE_RANGE -> PriceRange: 2000+",
+      "Product: 夏日惊喜礼盒（限量版） -> BELONGS_TO_CATEGORY -> Category: 个人香氛",
+      "Product: 夏日惊喜礼盒（限量版） -> IN_PRICE_RANGE -> PriceRange: 2000+"
+    ],
+    "warnings": []
+  },
+  {
+    "id": 10,
+    "query": "哪些商品同时包含无花果和雪松？",
+    "intent": "products_with_all_scent_notes",
+    "answer": "直接命中的商品有：多用途家居清洁喷雾（home fragrance / 室内香氛 / 370元）、多用途家居清洁喷雾补充装（home fragrance / 室内香氛 / 250元）、希腊无花果室内香氛蜡（candle / 室内香氛 / 580元）。",
+    "answer_sections": [
+      "直接命中的商品有：多用途家居清洁喷雾（home fragrance / 室内香氛 / 370元）、多用途家居清洁喷雾补充装（home fragrance / 室内香氛 / 250元）、希腊无花果室内香氛蜡（candle / 室内香氛 / 580元）。"
+    ],
+    "used_direct_products": [
+      "多用途家居清洁喷雾",
+      "多用途家居清洁喷雾补充装",
+      "希腊无花果室内香氛蜡"
+    ],
+    "used_indirect_or_bundle_products": [],
+    "used_scent_notes": [],
+    "evidence_paths": [
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾 -> HAS_SCENT_NOTE -> ScentNote: 雪松",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 多用途家居清洁喷雾补充装 -> HAS_SCENT_NOTE -> ScentNote: 雪松",
+      "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 无花果",
+      "Product: 希腊无花果室内香氛蜡 -> HAS_SCENT_NOTE -> ScentNote: 雪松"
+    ],
+    "warnings": []
+  }
+]
