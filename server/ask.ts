@@ -1,4 +1,4 @@
-import type { IncomingMessage, ServerResponse } from "node:http";
+﻿import type { IncomingMessage, ServerResponse } from "node:http";
 
 import { askQuestion } from "../src/services/qaService.js";
 
@@ -21,6 +21,11 @@ function getQuestionFromUrl(request: IncomingMessage): string {
   return String(url.searchParams.get("question") ?? "").trim();
 }
 
+function getHistoryFromUrl(request: IncomingMessage): string[] {
+  const url = new URL(request.url ?? "/api/ask", "http://127.0.0.1");
+  return url.searchParams.getAll("history").map((item) => String(item).trim()).filter(Boolean);
+}
+
 export async function handleAskRequest(request: IncomingMessage, response: ServerResponse): Promise<void> {
   if (request.method !== "POST" && request.method !== "GET") {
     writeJson(response, 405, { error: "method_not_allowed" });
@@ -28,11 +33,13 @@ export async function handleAskRequest(request: IncomingMessage, response: Serve
   }
 
   let question = request.method === "GET" ? getQuestionFromUrl(request) : "";
+  let history: string[] = request.method === "GET" ? getHistoryFromUrl(request) : [];
 
   if (request.method === "POST") {
     const body = await readBody(request);
-    const parsed = body ? (JSON.parse(body) as { question?: string }) : {};
+    const parsed = body ? (JSON.parse(body) as { question?: string; history?: string[] }) : {};
     question = String(parsed.question ?? "").trim();
+    history = Array.isArray(parsed.history) ? parsed.history.map((item) => String(item).trim()).filter(Boolean) : [];
   }
 
   if (!question) {
@@ -40,6 +47,6 @@ export async function handleAskRequest(request: IncomingMessage, response: Serve
     return;
   }
 
-  const result = await askQuestion(question);
+  const result = await askQuestion(question, history);
   writeJson(response, 200, result);
 }
