@@ -1,17 +1,15 @@
-import type { AskResponse } from "../lib/contracts.js";
+﻿import type { AskResponse } from "../lib/contracts.js";
+import { fetchJson, publicUrl } from "./retrievalClient.js";
 
 type MockAnswerRecord = AskResponse & { id?: number };
 
-function publicUrl(path: string): string {
-  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
-}
+export type AskGraphQuestionResult = {
+  data: AskResponse;
+  mode: "api" | "static";
+};
 
 async function loadMockAnswers(): Promise<MockAnswerRecord[]> {
-  const response = await fetch(publicUrl("answer-test-results.json"));
-  if (!response.ok) {
-    throw new Error(`Failed to load answer-test-results.json: ${response.status}`);
-  }
-  return (await response.json()) as MockAnswerRecord[];
+  return fetchJson<MockAnswerRecord[]>("answer-test-results.json");
 }
 
 function normalizeQuestion(text: string): string {
@@ -26,7 +24,8 @@ function findMockAnswer(records: MockAnswerRecord[], question: string): AskRespo
   return {
     query: question,
     intent: "unknown",
-    answer: "当前图谱中没有检索到相关信息。",
+    answer: "当前静态演示模式下没有找到完全匹配的预生成回答。你可以改用示例问题，或在本地带 ask 接口的模式下查看完整问答联动。",
+    answer_sections: [],
     matched_entities: [],
     direct_products: [],
     indirect_or_bundle_products: [],
@@ -41,7 +40,7 @@ function findMockAnswer(records: MockAnswerRecord[], question: string): AskRespo
   };
 }
 
-export async function askGraphQuestion(question: string): Promise<AskResponse> {
+export async function askGraphQuestion(question: string): Promise<AskGraphQuestionResult> {
   try {
     const response = await fetch(publicUrl("api/ask"), {
       method: "POST",
@@ -55,10 +54,16 @@ export async function askGraphQuestion(question: string): Promise<AskResponse> {
       throw new Error(`Ask request failed with status ${response.status}`);
     }
 
-    return (await response.json()) as AskResponse;
+    return {
+      data: (await response.json()) as AskResponse,
+      mode: "api",
+    };
   } catch (error) {
     console.warn("/api/ask unavailable, falling back to static mock answers.", error);
     const records = await loadMockAnswers();
-    return findMockAnswer(records, question);
+    return {
+      data: findMockAnswer(records, question),
+      mode: "static",
+    };
   }
 }

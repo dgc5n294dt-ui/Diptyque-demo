@@ -1,65 +1,54 @@
-import type { GraphEdge, GraphNode } from "../lib/contracts.js";
+﻿import type { GraphNode, ThemePanelData } from "../lib/contracts.js";
 
 type Props = {
+  panel: ThemePanelData;
   selectedNode: GraphNode | null;
-  relatedEdges: GraphEdge[];
-  nodesById: Map<string, GraphNode>;
+  onJumpToNode: (nodeId: string) => void;
 };
 
-function relationPath(edge: GraphEdge, nodesById: Map<string, GraphNode>): string {
-  const source = nodesById.get(edge.source);
-  const target = nodesById.get(edge.target);
-  if (!source || !target) return `${edge.source} -> ${edge.relation} -> ${edge.target}`;
-  return `${source.label} -> ${edge.relation} -> ${target.label}`;
+function SectionTitle({ title, caption }: { title: string; caption?: string }): JSX.Element {
+  return (
+    <div className="section-header compact detail-section-header">
+      <div>
+        <h3>{title}</h3>
+        {caption ? <p>{caption}</p> : null}
+      </div>
+    </div>
+  );
 }
 
-export function NodeDetailPanel({ selectedNode, relatedEdges, nodesById }: Props): JSX.Element {
-  if (!selectedNode) {
-    return (
-      <aside className="detail-panel empty-state">
-        <h3>节点详情</h3>
-        <p>点击图谱中的节点后，这里会显示商品、香调、分类及其证据路径。</p>
-      </aside>
-    );
-  }
-
-  const data = selectedNode.data ?? {};
-  const detailEntries = Object.entries(data)
-    .filter(([, value]) => typeof value === "string" && String(value).trim().length > 0)
-    .slice(0, 12);
-
+export function NodeDetailPanel({ panel, selectedNode, onJumpToNode }: Props): JSX.Element {
   return (
-    <aside className="detail-panel">
-      <div className="detail-header">
-        <span className="node-type-pill">{selectedNode.type}</span>
-        <h3>{selectedNode.label}</h3>
-      </div>
-
-      <div className="detail-body">
-        {detailEntries.length > 0 && (
-          <div className="detail-card">
-            <h4>节点字段</h4>
-            <dl className="detail-list">
-              {detailEntries.map(([key, value]) => (
-                <div key={key} className="detail-list-row">
-                  <dt>{key}</dt>
-                  <dd>{String(value)}</dd>
-                </div>
-              ))}
-            </dl>
+    <aside className="detail-panel exploration-detail-panel">
+      <section className="detail-card hero-detail-card">
+        <p className="eyebrow">{panel.kicker}</p>
+        <div className="detail-title-row">
+          <div>
+            <h2>{panel.title}</h2>
+            <p className="muted">{panel.typeLabel}</p>
           </div>
-        )}
-
-        <div className="detail-card">
-          <h4>相关路径</h4>
-          <ul className="path-list">
-            {relatedEdges.length === 0 ? <li>当前节点没有可展示的边。</li> : null}
-            {relatedEdges.slice(0, 18).map((edge) => (
-              <li key={edge.id}>{relationPath(edge, nodesById)}</li>
-            ))}
-          </ul>
+          {selectedNode ? <span className="node-type-pill">{selectedNode.type}</span> : null}
         </div>
-      </div>
+        <p className="detail-summary">{panel.summary}</p>
+      </section>
+
+      <section className="detail-card">
+        <SectionTitle title="答案与导览" caption={panel.guide} />
+        <p className="detail-answer">{panel.answer}</p>
+      </section>
+
+      <section className="detail-card">
+        <SectionTitle title="当前主题" caption="围绕当前主题可继续点击下列相关维度或概念节点。" />
+        <div className="link-chip-list">
+          {panel.relatedLinks.length === 0 ? <p className="muted">当前没有可展开的相关入口。</p> : null}
+          {panel.relatedLinks.map((link) => (
+            <button key={link.id} className="jump-chip" onClick={() => onJumpToNode(link.id)}>
+              <strong>{link.label}</strong>
+              <span>{link.caption ?? link.type}</span>
+            </button>
+          ))}
+        </div>
+      </section>
     </aside>
   );
 }

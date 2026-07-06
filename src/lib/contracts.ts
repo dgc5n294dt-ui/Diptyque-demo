@@ -1,4 +1,4 @@
-export type AnswerProvider = "mock" | "deepseek";
+﻿export type AnswerProvider = "mock" | "deepseek";
 
 export type GraphNodeType =
   | "Brand"
@@ -10,13 +10,36 @@ export type GraphNodeType =
   | "Ingredient"
   | "Size"
   | "PriceRange"
-  | "CollectionOrSeries";
+  | "CollectionOrSeries"
+  | "Dimension"
+  | "Theme";
+
+export type GraphLayoutMode = "radial" | "organic";
+
+export type DimensionKey =
+  | "product"
+  | "scent"
+  | "collection"
+  | "productType"
+  | "priceRange"
+  | "size"
+  | "brand";
+
+export type ThemeOrigin = "default" | "dimension" | "node" | "query";
 
 export type GraphNode = {
   id: string;
   label: string;
   type: GraphNodeType;
   data: Record<string, unknown>;
+  ui?: {
+    color?: string;
+    size?: number;
+    shape?: string;
+    opacity?: number;
+    rank?: number;
+    emphasis?: "hero" | "primary" | "secondary";
+  };
 };
 
 export type GraphEdge = {
@@ -25,6 +48,12 @@ export type GraphEdge = {
   target: string;
   relation: string;
   label: string;
+  ui?: {
+    color?: string;
+    width?: number;
+    lineStyle?: "solid" | "dashed";
+    arrowShape?: "triangle" | "none";
+  };
 };
 
 export type GraphData = {
@@ -85,6 +114,7 @@ export type AskResponse = {
   query: string;
   intent: string;
   answer: string;
+  answer_sections?: string[];
   matched_entities: MatchedEntity[];
   direct_products: ProductResult[];
   indirect_or_bundle_products: ProductResult[];
@@ -96,4 +126,40 @@ export type AskResponse = {
   evidence_paths: string[];
   warnings: string[];
   provider: AnswerProvider;
+};
+
+export type ExplorationLink = {
+  id: string;
+  label: string;
+  type: GraphNodeType;
+  caption?: string;
+};
+
+export type ProductCardData = {
+  nodeId: string;
+  label: string;
+  productType: string;
+  category: string;
+  subcategory: string;
+  price: string;
+  priceRange: string;
+  collectionOrSeries: string;
+  scentSummary: string[];
+  relationReason: string;
+  nextExplore: ExplorationLink[];
+};
+
+export type ThemePanelData = {
+  title: string;
+  kicker: string;
+  typeLabel: string;
+  origin: ThemeOrigin;
+  summary: string;
+  answer: string;
+  guide: string;
+  evidenceMessage: string;
+  relatedLinks: ExplorationLink[];
+  directProducts: ProductCardData[];
+  indirectProducts: ProductCardData[];
+  nextSteps: ExplorationLink[];
 };
