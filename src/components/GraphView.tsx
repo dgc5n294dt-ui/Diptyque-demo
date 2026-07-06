@@ -11,24 +11,54 @@ type Props = {
   onSelectNode: (nodeId: string | null) => void;
 };
 
-function getLayout(layoutMode: GraphLayoutMode): cytoscape.LayoutOptions {
+function getLayout(layoutMode: GraphLayoutMode, hasFocus: boolean): cytoscape.LayoutOptions {
   if (layoutMode === "radial") {
     return {
       name: "concentric",
       animate: false,
       fit: true,
-      minNodeSpacing: 24,
-      padding: 24,
+      minNodeSpacing: 34,
+      padding: 40,
+      avoidOverlap: true,
+      spacingFactor: 1.2,
+      concentric: (node) => {
+        const emphasis = String(node.data("emphasis") ?? "secondary");
+        if (emphasis === "hero") return 3;
+        if (emphasis === "primary") return 2;
+        return 1;
+      },
+      levelWidth: () => 1,
+    };
+  }
+
+  if (hasFocus) {
+    return {
+      name: "breadthfirst",
+      animate: false,
+      fit: true,
+      directed: false,
+      padding: 44,
+      spacingFactor: 1.45,
+      avoidOverlap: true,
+      circle: true,
     };
   }
 
   return {
-    name: "cose",
+    name: "concentric",
     animate: false,
     fit: true,
-    padding: 24,
-    nodeRepulsion: 7200,
-    idealEdgeLength: 96,
+    minNodeSpacing: 36,
+    padding: 44,
+    avoidOverlap: true,
+    spacingFactor: 1.18,
+    concentric: (node) => {
+      const emphasis = String(node.data("emphasis") ?? "secondary");
+      if (emphasis === "hero") return 3;
+      if (emphasis === "primary") return 2;
+      return 1;
+    },
+    levelWidth: () => 1,
   };
 }
 
@@ -38,6 +68,7 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
 
   useEffect(() => {
     if (!containerRef.current) return;
+    const hasFocus = Boolean(selectedNodeId);
 
     const cy = cytoscape({
       container: containerRef.current,
@@ -75,14 +106,15 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
             height: "data(size)",
             shape: "data(shape)",
             color: "#3a2c25",
-            "font-size": 10,
+            "font-size": 11,
             "font-weight": 500,
             "text-wrap": "wrap",
-            "text-max-width": 132,
+            "text-max-width": 96,
             "background-color": "data(color)",
             opacity: "data(opacity)",
-            "text-valign": "center",
+            "text-valign": "bottom",
             "text-halign": "center",
+            "text-margin-y": 8,
             "text-outline-color": "#f7f3ee",
             "text-outline-width": 3,
             "border-width": 1.5,
@@ -93,7 +125,7 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
           selector: "edge",
           style: {
             width: "data(width)",
-            label: "data(label)",
+            label: hasFocus ? "data(label)" : "",
             color: "#a99f96",
             "font-size": 8,
             "text-rotation": "autorotate",
@@ -101,7 +133,7 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
             "line-color": "data(color)",
             "curve-style": "bezier",
             "line-style": "data(lineStyle)",
-            opacity: 0.95,
+            opacity: 0.72,
           },
         },
         {
@@ -109,6 +141,15 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
           style: {
             "border-width": 3,
             "border-color": "#2f241c",
+            "font-size": 12,
+            "text-max-width": 112,
+          },
+        },
+        {
+          selector: 'node[emphasis = "secondary"]',
+          style: {
+            "font-size": 10,
+            "text-max-width": 84,
           },
         },
         {
@@ -122,11 +163,11 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
         {
           selector: ".dimmed",
           style: {
-            opacity: 0.16,
+            opacity: 0.12,
           },
         },
       ],
-      layout: getLayout(layoutMode),
+      layout: getLayout(layoutMode, hasFocus),
     });
 
     cy.on("tap", "node", (event) => {
@@ -143,7 +184,7 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
       cy.destroy();
       cyRef.current = null;
     };
-  }, [nodes, edges, layoutMode, onSelectNode]);
+  }, [nodes, edges, layoutMode, onSelectNode, selectedNodeId]);
 
   useEffect(() => {
     const cy = cyRef.current;
@@ -152,7 +193,7 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
     cy.elements().removeClass("dimmed");
     if (!selectedNodeId) {
       cy.$(":selected").unselect();
-      cy.fit(undefined, 24);
+      cy.fit(undefined, 30);
       return;
     }
 
@@ -160,7 +201,7 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
     if (selected.nonempty()) {
       cy.nodes().difference(selected.closedNeighborhood()).addClass("dimmed");
       selected.select();
-      cy.animate({ fit: { eles: selected.closedNeighborhood(), padding: 48 }, duration: 240 });
+      cy.animate({ fit: { eles: selected.closedNeighborhood(), padding: 56 }, duration: 240 });
     }
   }, [selectedNodeId]);
 
