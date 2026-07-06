@@ -29,7 +29,7 @@ function qaApiPlugin(): Plugin {
 }
 
 export default defineConfig({
-  base: "/Diptyque/",
+  base: "/Diptyque-demo/",
   plugins: [react(), qaApiPlugin()],
   server: {
     port: 5173,
