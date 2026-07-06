@@ -17,10 +17,8 @@ function getLayout(layoutMode: GraphLayoutMode): cytoscape.LayoutOptions {
       name: "concentric",
       animate: false,
       fit: true,
-      minNodeSpacing: 26,
-      padding: 26,
-      concentric: (node) => Number(node.data("rank") ?? 1),
-      levelWidth: () => 1,
+      minNodeSpacing: 24,
+      padding: 24,
     };
   }
 
@@ -29,8 +27,8 @@ function getLayout(layoutMode: GraphLayoutMode): cytoscape.LayoutOptions {
     animate: false,
     fit: true,
     padding: 24,
-    nodeRepulsion: 8800,
-    idealEdgeLength: 110,
+    nodeRepulsion: 7200,
+    idealEdgeLength: 96,
   };
 }
 
@@ -53,7 +51,6 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
             size: node.ui?.size,
             opacity: node.ui?.opacity,
             shape: node.ui?.shape,
-            rank: node.ui?.rank,
             emphasis: node.ui?.emphasis,
           },
         })),
@@ -62,12 +59,10 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
             id: edge.id,
             source: edge.source,
             target: edge.target,
-            relation: edge.relation,
             label: edge.label,
             color: edge.ui?.color,
             width: edge.ui?.width,
             lineStyle: edge.ui?.lineStyle,
-            arrowShape: edge.ui?.arrowShape,
           },
         })),
       ],
@@ -79,59 +74,55 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
             width: "data(size)",
             height: "data(size)",
             shape: "data(shape)",
-            color: "#1d140f",
-            "font-size": 11,
-            "font-weight": 600,
+            color: "#3a2c25",
+            "font-size": 10,
+            "font-weight": 500,
             "text-wrap": "wrap",
-            "text-max-width": 104,
+            "text-max-width": 132,
             "background-color": "data(color)",
             opacity: "data(opacity)",
-            "text-valign": "bottom",
-            "text-margin-y": 7,
+            "text-valign": "center",
+            "text-halign": "center",
+            "text-outline-color": "#f7f3ee",
+            "text-outline-width": 3,
             "border-width": 1.5,
-            "border-color": "#f8f2ea",
-          },
-        },
-        {
-          selector: 'node[type = "Theme"]',
-          style: {
-            color: "#f8f2ea",
-            "text-outline-width": 0,
-            "font-size": 13,
-            "text-max-width": 132,
-          },
-        },
-        {
-          selector: 'node[emphasis = "hero"]',
-          style: {
-            "border-width": 2.5,
-            "border-color": "#ead8c1",
+            "border-color": "rgba(255,255,255,0.9)",
           },
         },
         {
           selector: "edge",
           style: {
             width: "data(width)",
+            label: "data(label)",
+            color: "#a99f96",
+            "font-size": 8,
+            "text-rotation": "autorotate",
+            "text-margin-y": -4,
             "line-color": "data(color)",
-            "target-arrow-color": "data(color)",
-            "target-arrow-shape": "data(arrowShape)",
             "curve-style": "bezier",
             "line-style": "data(lineStyle)",
-            opacity: 0.9,
+            opacity: 0.95,
+          },
+        },
+        {
+          selector: 'node[emphasis = "hero"]',
+          style: {
+            "border-width": 3,
+            "border-color": "#2f241c",
           },
         },
         {
           selector: "node:selected",
           style: {
             "border-width": 4,
-            "border-color": "#d8a36b",
+            "border-color": "#f3d36a",
             "overlay-opacity": 0,
           },
         },
         {
-          selector: ".faded",
+          selector: ".dimmed",
           style: {
-            opacity: 0.18,
+            opacity: 0.16,
           },
         },
       ],
@@ -143,9 +134,7 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
     });
 
     cy.on("tap", (event) => {
-      if (event.target === cy) {
-        onSelectNode(null);
-      }
+      if (event.target === cy) onSelectNode(null);
     });
 
     cyRef.current = cy;
@@ -160,20 +149,20 @@ export function GraphView({ nodes, edges, selectedNodeId, layoutMode = "organic"
     const cy = cyRef.current;
     if (!cy) return;
 
-    cy.elements().removeClass("faded");
+    cy.elements().removeClass("dimmed");
     if (!selectedNodeId) {
       cy.$(":selected").unselect();
-      cy.fit(undefined, 30);
+      cy.fit(undefined, 24);
       return;
     }
 
     const selected = cy.getElementById(selectedNodeId);
     if (selected.nonempty()) {
-      cy.nodes().difference(selected.closedNeighborhood()).addClass("faded");
+      cy.nodes().difference(selected.closedNeighborhood()).addClass("dimmed");
       selected.select();
-      cy.animate({ fit: { eles: selected.closedNeighborhood(), padding: 42 }, duration: 260 });
+      cy.animate({ fit: { eles: selected.closedNeighborhood(), padding: 48 }, duration: 240 });
     }
   }, [selectedNodeId]);
 
-  return <div className="graph-canvas" ref={containerRef} />;
+  return <div className="graph-stage" ref={containerRef} />;
 }

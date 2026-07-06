@@ -16,17 +16,6 @@ export type GraphNodeType =
 
 export type GraphLayoutMode = "radial" | "organic";
 
-export type DimensionKey =
-  | "product"
-  | "scent"
-  | "collection"
-  | "productType"
-  | "priceRange"
-  | "size"
-  | "brand";
-
-export type ThemeOrigin = "default" | "dimension" | "node" | "query";
-
 export type GraphNode = {
   id: string;
   label: string;
@@ -37,7 +26,6 @@ export type GraphNode = {
     size?: number;
     shape?: string;
     opacity?: number;
-    rank?: number;
     emphasis?: "hero" | "primary" | "secondary";
   };
 };
@@ -128,17 +116,11 @@ export type AskResponse = {
   provider: AnswerProvider;
 };
 
-export type ExplorationLink = {
-  id: string;
-  label: string;
-  type: GraphNodeType;
-  caption?: string;
-};
-
 export type ProductCardData = {
   nodeId: string;
   label: string;
-  productType: string;
+  subtitle: string;
+  englishName: string;
   category: string;
   subcategory: string;
   price: string;
@@ -146,20 +128,9 @@ export type ProductCardData = {
   collectionOrSeries: string;
   scentSummary: string[];
   relationReason: string;
-  nextExplore: ExplorationLink[];
-};
-
-export type ThemePanelData = {
-  title: string;
-  kicker: string;
-  typeLabel: string;
-  origin: ThemeOrigin;
-  summary: string;
-  answer: string;
-  guide: string;
-  evidenceMessage: string;
-  relatedLinks: ExplorationLink[];
-  directProducts: ProductCardData[];
-  indirectProducts: ProductCardData[];
-  nextSteps: ExplorationLink[];
+  nextExplore: Array<{ id: string; label: string; type: GraphNodeType }>;
+  imageUrl: string;
+  productUrl: string;
+  description: string;
+  size: string;
 };

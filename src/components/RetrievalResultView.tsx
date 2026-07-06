@@ -1,179 +1,146 @@
-﻿import { useMemo, useState } from "react";
-
-import type { AskResponse, ProductCardData, ThemePanelData } from "../lib/contracts.js";
+﻿import type { AskResponse, ProductCardData } from "../lib/contracts.js";
+import type { ChatResultModel, ChatSuggestion } from "../services/exploration.js";
 
 type Props = {
-  panel: ThemePanelData;
+  question: string;
+  loading: boolean;
   result: AskResponse | null;
-  error: string;
-  onJumpToNode: (nodeId: string) => void;
+  chatModel: ChatResultModel | null;
+  onAskSuggestion: (question: string) => void;
+  onJumpToGraph: (nodeId: string) => void;
 };
 
-function ProductCard({ item, onJumpToNode }: { item: ProductCardData; onJumpToNode: (nodeId: string) => void }): JSX.Element {
+function ProductCard({ item, onJumpToGraph }: { item: ProductCardData; onJumpToGraph: (nodeId: string) => void }): JSX.Element {
   return (
-    <article className="product-card">
-      <div className="product-card-head">
-        <div>
-          <h4>{item.label}</h4>
-          <p>{item.productType || "类型待补充"}</p>
+    <article className="product-card muji-card">
+      <div className="product-card-top">
+        {item.imageUrl ? (
+          <div className="product-card-thumb">
+            <img src={item.imageUrl} alt={item.label} loading="lazy" />
+          </div>
+        ) : null}
+
+        <div className="product-card-main">
+          <div className="product-card-header">
+            <div className="product-card-info">
+              <strong>{item.label}</strong>
+              {item.englishName ? <span className="name-en">{item.englishName}</span> : null}
+              <span className="product-card-category">{item.category || "Diptyque"}</span>
+            </div>
+          </div>
+
+          <div className="product-card-badges">
+            {item.scentSummary.slice(0, 5).map((note) => <span key={note} className="badge">{note}</span>)}
+            {item.collectionOrSeries ? <span className="badge">{item.collectionOrSeries}</span> : null}
+            {item.size ? <span className="badge">{item.size}</span> : null}
+          </div>
+
+          {item.subtitle ? <div className="product-card-subtitle">{item.subtitle}</div> : null}
+          {item.description ? <div className="product-card-desc">{item.description}</div> : null}
+
+          <div className="product-card-specs">
+            {item.collectionOrSeries ? `系列: ${item.collectionOrSeries}` : "系列待补充"}
+            {" · "}
+            {item.subcategory || item.priceRange || "商品详情"}
+          </div>
+
+          <div className="product-card-talk">💬 {item.relationReason}</div>
         </div>
-        <span className="price-pill">{item.price}</span>
       </div>
 
-      <div className="product-meta-grid">
-        <span>类目：{item.category || "待补充"}</span>
-        <span>子类：{item.subcategory || "待补充"}</span>
-        <span>价格区间：{item.priceRange || "待补充"}</span>
-        <span>系列：{item.collectionOrSeries || "未归入系列"}</span>
-      </div>
-
-      <p className="product-reason">{item.relationReason}</p>
-
-      <div className="product-scent-row">
-        <strong>香调摘要</strong>
-        <div className="mini-chip-list">
-          {item.scentSummary.length === 0 ? <span className="mini-chip muted-chip">当前局部图中暂无香调摘要</span> : null}
-          {item.scentSummary.map((note) => <span key={note} className="mini-chip">{note}</span>)}
-        </div>
-      </div>
-
-      <div className="product-next-row">
-        <strong>继续探索</strong>
-        <div className="mini-chip-list">
-          {item.nextExplore.map((link) => (
-            <button key={`${item.nodeId}:${link.id}`} className="mini-chip button-chip" onClick={() => onJumpToNode(link.id)}>
-              {link.label}
-            </button>
-          ))}
+      <div className="product-card-footer">
+        <span className="product-card-price">{item.price}</span>
+        <div className="product-card-actions">
+          <button className="muji-btn outline mini-graph-btn" onClick={() => onJumpToGraph(item.nodeId)}>◉ 图谱</button>
+          {item.productUrl ? <a className="muji-btn outline mini-link-btn" href={item.productUrl} target="_blank" rel="noreferrer">详情</a> : null}
         </div>
       </div>
     </article>
   );
 }
 
-function renderJson(result: AskResponse): string {
-  return JSON.stringify(
-    {
-      query: result.query,
-      intent: result.intent,
-      matched_entities: result.matched_entities,
-      direct_products: result.direct_products,
-      indirect_or_bundle_products: result.indirect_or_bundle_products,
-      scent_notes: result.scent_notes,
-      filter_evidence: result.filter_evidence,
-      evidence_paths: result.evidence_paths,
-      warnings: result.warnings,
-      provider: result.provider,
-    },
-    null,
-    2,
+function SuggestChips({ suggestions, onAskSuggestion, onJumpToGraph }: {
+  suggestions: ChatSuggestion[];
+  onAskSuggestion: (question: string) => void;
+  onJumpToGraph: (nodeId: string) => void;
+}): JSX.Element | null {
+  if (suggestions.length === 0) return null;
+
+  return (
+    <div className="suggest-chips">
+      <span className="suggest-label">💬 试试问：</span>
+      {suggestions.map((item) => item.kind === "ask"
+        ? <button key={item.label} className="suggest-chip" onClick={() => item.question && onAskSuggestion(item.question)}>{item.label}</button>
+        : <button key={item.label} className="suggest-chip" onClick={() => item.nodeId && onJumpToGraph(item.nodeId)}>{item.label}</button>)}
+    </div>
   );
 }
 
-export function RetrievalResultView({ panel, result, error, onJumpToNode }: Props): JSX.Element {
-  const [expanded, setExpanded] = useState(false);
-  const rawJson = useMemo(() => (result ? renderJson(result) : ""), [result]);
-
+export function RetrievalResultView({ question, loading, result, chatModel, onAskSuggestion, onJumpToGraph }: Props): JSX.Element {
   return (
-    <section className="result-shell single-page-result-shell">
-      <section className="result-section answer-card prominent-card">
-        <div className="answer-meta">
-          <span className="provider-pill">{result ? `provider: ${result.provider}` : "默认探索"}</span>
-          <span className="intent-pill">{result ? `intent: ${result.intent}` : panel.kicker}</span>
-        </div>
-        <h3>答案与导览</h3>
-        <p>{panel.answer}</p>
-        {error ? <div className="error-banner">{error}</div> : null}
-      </section>
+    <div className="scroll-container">
+      <div className="chat-msg bot">
+        <div className="answer-text">欢迎使用 Diptyque 商品知识库！询问商品信息、价格区间、香调关系和搭配推荐。</div>
+        <SuggestChips
+          suggestions={[
+            { kind: "ask", label: "哪些产品含有无花果香调？", question: "哪些产品含有无花果香调？" },
+            { kind: "ask", label: "多用途家居清洁喷雾有哪些香调？", question: "多用途家居清洁喷雾有哪些香调？" },
+            { kind: "ask", label: "圣日尔曼大道34号有哪些相关商品？", question: "圣日尔曼大道34号有哪些相关商品？" },
+            { kind: "ask", label: "有哪些1000元以上的个人香氛？", question: "有哪些1000元以上的个人香氛？" },
+          ]}
+          onAskSuggestion={onAskSuggestion}
+          onJumpToGraph={onJumpToGraph}
+        />
+      </div>
 
-      <section className="result-section">
-        <h4>直接相关商品</h4>
-        {panel.directProducts.length === 0 ? <p className="muted">当前主题下暂无直接商品，先从左侧维度或具体取值继续探索。</p> : null}
-        <div className="product-card-list">
-          {panel.directProducts.map((item) => <ProductCard key={item.nodeId} item={item} onJumpToNode={onJumpToNode} />)}
-        </div>
-      </section>
+      {question.trim() ? <div className="chat-msg user">{question.trim()}</div> : null}
+      {loading ? <div className="chat-msg loading"><span className="thinking-text">思考中</span></div> : null}
 
-      <section className="result-section">
-        <h4>礼盒 / 套装 / 间接结果</h4>
-        {panel.indirectProducts.length === 0 ? <p className="muted">当前没有需要单独提示的礼盒、套装或间接结果。</p> : null}
-        <div className="product-card-list compact-cards">
-          {panel.indirectProducts.map((item) => <ProductCard key={item.nodeId} item={item} onJumpToNode={onJumpToNode} />)}
-        </div>
-      </section>
+      {chatModel ? (
+        <div className="chat-msg bot result-block">
+          <div className="answer-text">{chatModel.answer}</div>
 
-      <section className="result-section">
-        <h4>下一步探索</h4>
-        <div className="link-chip-list">
-          {panel.nextSteps.length === 0 ? <p className="muted">当前没有更多推荐入口。</p> : null}
-          {panel.nextSteps.map((link) => (
-            <button key={`next:${link.id}`} className="jump-chip" onClick={() => onJumpToNode(link.id)}>
-              <strong>{link.label}</strong>
-              <span>{link.caption ?? link.type}</span>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="result-section debug-section">
-        <div className="debug-header-row">
-          <div>
-            <h4>证据与调试</h4>
-            <p>{panel.evidenceMessage}</p>
+          <div className="card-stack">
+            {chatModel.directProducts.map((item) => <ProductCard key={item.nodeId} item={item} onJumpToGraph={onJumpToGraph} />)}
+            {chatModel.indirectProducts.map((item) => <ProductCard key={item.nodeId} item={item} onJumpToGraph={onJumpToGraph} />)}
           </div>
-          <button className="secondary" onClick={() => setExpanded((value) => !value)}>
-            {expanded ? "收起证据路径" : "查看证据路径"}
-          </button>
+
+          <details className="retrieval-pipeline route-pipeline collapsed">
+            <summary className="pipeline-header">
+              <span className="pipeline-title">🔍 检索决策链路</span>
+              <span className="pipeline-mode-badge">{chatModel.modeLabel}</span>
+            </summary>
+            <div className="pipeline-body">
+              <div className="detail-section">
+                <div className="detail-section-title">匹配实体</div>
+                {chatModel.matchedEntities.length === 0 ? <div className="detail-val muted">暂无</div> : null}
+                {chatModel.matchedEntities.map((item) => <div key={item} className="detail-row"><span className="detail-val">{item}</span></div>)}
+              </div>
+
+              <div className="detail-section">
+                <div className="detail-section-title">过滤证据</div>
+                {chatModel.filterEvidence.length === 0 ? <div className="detail-val muted">暂无</div> : null}
+                {chatModel.filterEvidence.map((item) => <div key={item} className="detail-row"><span className="detail-val">{item}</span></div>)}
+              </div>
+
+              <div className="detail-section">
+                <div className="detail-section-title">知识证据</div>
+                {chatModel.evidencePaths.length === 0 ? <div className="detail-val muted">暂无</div> : null}
+                {chatModel.evidencePaths.map((item) => <div key={item} className="knowledge-evidence-row"><span className="chunk-text">{item}</span></div>)}
+              </div>
+            </div>
+          </details>
+
+          <SuggestChips suggestions={chatModel.suggestions} onAskSuggestion={onAskSuggestion} onJumpToGraph={onJumpToGraph} />
+          <div className="answer-meta">{chatModel.metaLine}</div>
         </div>
+      ) : null}
 
-        {expanded ? (
-          <div className="debug-content">
-            {result ? (
-              <>
-                <div className="debug-grid">
-                  <section>
-                    <h5>matched_entities</h5>
-                    {result.matched_entities.length === 0 ? <p className="muted">暂无</p> : null}
-                    <ul className="result-list">
-                      {result.matched_entities.map((entity) => <li key={entity.id}>{entity.label} ({entity.type})</li>)}
-                    </ul>
-                  </section>
-                  <section>
-                    <h5>filter_evidence</h5>
-                    {result.filter_evidence.length === 0 ? <p className="muted">暂无</p> : null}
-                    <ul className="result-list">
-                      {result.filter_evidence.map((item) => <li key={item.product_id}>{item.label}</li>)}
-                    </ul>
-                  </section>
-                </div>
-
-                <section>
-                  <h5>evidence_paths</h5>
-                  {result.evidence_paths.length === 0 ? <p className="muted">暂无</p> : null}
-                  <ul className="path-list">
-                    {result.evidence_paths.map((path, index) => <li key={`${index}:${path}`}>{path}</li>)}
-                  </ul>
-                </section>
-
-                <section>
-                  <h5>warnings</h5>
-                  {result.warnings.length === 0 ? <p className="muted">暂无</p> : null}
-                  <ul className="result-list">
-                    {result.warnings.map((warning) => <li key={warning}>{warning}</li>)}
-                  </ul>
-                </section>
-
-                <section>
-                  <h5>原始 retrieval 字段</h5>
-                  <pre className="debug-pre">{rawJson}</pre>
-                </section>
-              </>
-            ) : (
-              <p className="muted">默认探索状态下暂无 retrieval 结果；点击维度、节点或输入问题后，这里会显示证据路径与原始字段。</p>
-            )}
-          </div>
-        ) : null}
-      </section>
-    </section>
+      {result?.warnings.length ? (
+        <div className="chat-msg bot warning-block">
+          {result.warnings.map((warning) => <div key={warning} className="detail-val">{warning}</div>)}
+        </div>
+      ) : null}
+    </div>
   );
 }
