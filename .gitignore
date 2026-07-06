@@ -1,5 +1,8 @@
-node_modules/
+﻿node_modules/
 dist/
 work/*.log
 work/*.json
 .git.broken-backup-20260706/
+.env
+.env.*
+!.env.example

@@ -1,9 +1,11 @@
-import type { AskResponse, AnswerProvider } from "../lib/contracts.js";
+﻿import type { AskResponse, AnswerProvider } from "../lib/contracts.js";
 import { buildAnswerPrompt } from "./buildAnswerPrompt.js";
+import { ensureLocalEnvLoaded } from "./loadLocalEnv.js";
 import { formatAnswerFromRetrieval } from "../../scripts/answer-graph.js";
 import { retrieveGraphQuestion } from "../../scripts/retrieve-graph.js";
 
 function getConfiguredProvider(): AnswerProvider {
+  ensureLocalEnvLoaded();
   const raw = String(process.env.ANSWER_PROVIDER ?? "mock").trim().toLowerCase();
   return raw === "deepseek" ? "deepseek" : "mock";
 }
@@ -21,11 +23,12 @@ async function buildMockResponse(question: string): Promise<AskResponse> {
   };
 }
 
-async function buildDeepSeekResponse(question: string): Promise<AskResponse> {
+async function buildDeepSeekResponse(question: string, history: string[] = []): Promise<AskResponse> {
+  ensureLocalEnvLoaded();
   const fallback = await buildMockResponse(question);
   const apiKey = String(process.env.DEEPSEEK_API_KEY ?? "").trim();
   const baseUrl = String(process.env.DEEPSEEK_BASE_URL ?? "https://api.deepseek.com").trim().replace(/\/$/, "");
-  const model = String(process.env.DEEPSEEK_MODEL ?? "deepseek-chat").trim();
+  const model = String(process.env.DEEPSEEK_MODEL ?? "deepseek-v4-flash").trim();
 
   if (!apiKey) {
     return {
@@ -35,7 +38,7 @@ async function buildDeepSeekResponse(question: string): Promise<AskResponse> {
     };
   }
 
-  const prompt = buildAnswerPrompt(fallback);
+  const prompt = buildAnswerPrompt(fallback, history);
 
   try {
     const response = await fetch(`${baseUrl}/chat/completions`, {
@@ -81,9 +84,9 @@ async function buildDeepSeekResponse(question: string): Promise<AskResponse> {
   }
 }
 
-export async function askQuestion(question: string): Promise<AskResponse> {
+export async function askQuestion(question: string, history: string[] = []): Promise<AskResponse> {
   const provider = getConfiguredProvider();
-  return provider === "deepseek" ? buildDeepSeekResponse(question) : buildMockResponse(question);
+  return provider === "deepseek" ? buildDeepSeekResponse(question, history) : buildMockResponse(question);
 }
 
 export function getDefaultProvider(): AnswerProvider {

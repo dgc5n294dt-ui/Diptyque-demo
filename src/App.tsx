@@ -5,10 +5,19 @@ import { QueryTab } from "./components/QueryTab.js";
 import { RetrievalResultView } from "./components/RetrievalResultView.js";
 import type { AskResponse, GraphData } from "./lib/contracts.js";
 import { askGraphQuestion } from "./services/askClient.js";
-import { buildChatResultModel, findGraphNodeById, getSceneForState, type ExplorationState } from "./services/exploration.js";
+import { buildChatResultModel, getSceneForState, type ChatResultModel, type ExplorationState } from "./services/exploration.js";
 import { loadProductGraph } from "./services/retrievalClient.js";
 
 type ActiveTab = "graph" | "chat";
+type AskMode = "idle" | "api" | "static";
+type ChatTurn = {
+  id: string;
+  question: string;
+  askMode: AskMode;
+  result: AskResponse | null;
+  chatModel: ChatResultModel | null;
+  loading: boolean;
+};
 
 const DEFAULT_STATE: ExplorationState = {
   origin: "default",
@@ -25,6 +34,7 @@ export default function App(): JSX.Element {
   const [asking, setAsking] = useState(false);
   const [activeTab, setActiveTab] = useState<ActiveTab>("graph");
   const [state, setState] = useState<ExplorationState>(DEFAULT_STATE);
+  const [chatTurns, setChatTurns] = useState<ChatTurn[]>([]);
 
   useEffect(() => {
     async function load(): Promise<void> {
@@ -44,8 +54,6 @@ export default function App(): JSX.Element {
   }, []);
 
   const scene = useMemo(() => (graph ? getSceneForState(graph, state) : null), [graph, state]);
-  const chatModel = useMemo(() => (graph && state.answerResult ? buildChatResultModel(graph, state.answerResult) : null), [graph, state.answerResult]);
-  const focusNode = useMemo(() => (graph ? findGraphNodeById(graph, scene?.focusNodeId ?? null) : null), [graph, scene?.focusNodeId]);
 
   function resetGraph(): void {
     setState((current) => ({
@@ -70,19 +78,75 @@ export default function App(): JSX.Element {
   }
 
   async function ask(questionText: string): Promise<void> {
-    if (!questionText.trim()) return;
+    const normalized = questionText.trim();
+    if (!normalized || !graph) return;
+
+    const turnId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
     setAsking(true);
-    setQuestion(questionText);
+    setQuestion("");
     setActiveTab("chat");
+    setChatTurns((current) => [
+      ...current,
+      {
+        id: turnId,
+        question: normalized,
+        askMode: "idle",
+        result: null,
+        chatModel: null,
+        loading: true,
+      },
+    ]);
 
     try {
-      const response = await askGraphQuestion(questionText.trim());
+      const response = await askGraphQuestion(normalized);
+      const askMode = response.mode;
+      const answerResult = response.data as AskResponse;
+      const chatModel = buildChatResultModel(graph, answerResult);
+
       setState({
         origin: "query",
         selectedNodeId: null,
-        prompt: questionText.trim(),
-        answerResult: response.data as AskResponse,
+        prompt: normalized,
+        answerResult,
       });
+
+      setChatTurns((current) => current.map((turn) => turn.id === turnId
+        ? {
+            ...turn,
+            askMode,
+            result: answerResult,
+            chatModel,
+            loading: false,
+          }
+        : turn));
+    } catch (error) {
+      const fallbackResult: AskResponse = {
+        query: normalized,
+        intent: "unknown",
+        answer: error instanceof Error ? error.message : String(error),
+        answer_sections: [],
+        matched_entities: [],
+        direct_products: [],
+        indirect_or_bundle_products: [],
+        supporting_results: [],
+        uncertain_results: [],
+        target_product: [],
+        scent_notes: [],
+        filter_evidence: [],
+        evidence_paths: [],
+        warnings: [error instanceof Error ? error.message : String(error)],
+        provider: "mock",
+      };
+
+      setChatTurns((current) => current.map((turn) => turn.id === turnId
+        ? {
+            ...turn,
+            askMode: "static",
+            result: fallbackResult,
+            chatModel: buildChatResultModel(graph, fallbackResult),
+            loading: false,
+          }
+        : turn));
     } finally {
       setAsking(false);
     }
@@ -146,12 +210,8 @@ export default function App(): JSX.Element {
 
         <section id="chat-panel" className={activeTab === "chat" ? "panel active chat-panel" : "panel chat-panel"}>
           <RetrievalResultView
-            question={question}
-            loading={asking}
-            result={state.answerResult}
-            chatModel={chatModel}
+            turns={chatTurns}
             onAskSuggestion={(nextQuestion) => {
-              setQuestion(nextQuestion);
               void ask(nextQuestion);
             }}
             onJumpToGraph={(nodeId) => {

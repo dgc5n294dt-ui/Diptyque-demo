@@ -28,8 +28,10 @@ function qaApiPlugin(): Plugin {
   };
 }
 
+const isGitHubPages = process.env.DEPLOY_TARGET === "github-pages";
+
 export default defineConfig({
-  base: "/Diptyque-demo/",
+  base: isGitHubPages ? "/Diptyque-demo/" : "/",
   plugins: [react(), qaApiPlugin()],
   server: {
     port: 5173,

@@ -1,5 +1,5 @@
 ﻿import type { AskResponse } from "../lib/contracts.js";
-import { fetchJson, publicUrl } from "./retrievalClient.js";
+import { fetchJson } from "./retrievalClient.js";
 
 type MockAnswerRecord = {
   id?: number;
@@ -78,22 +78,26 @@ function mergeStaticRecords(question: string, retrievalRecords: RetrievalRecord[
   };
 }
 
-export async function askGraphQuestion(question: string): Promise<AskGraphQuestionResult> {
+async function requestLiveAsk(question: string, history: string[]): Promise<AskResponse> {
+  const response = await fetch("/api/ask", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ question, history }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Ask request failed with status ${response.status}`);
+  }
+
+  return (await response.json()) as AskResponse;
+}
+
+export async function askGraphQuestion(question: string, history: string[] = []): Promise<AskGraphQuestionResult> {
   try {
-    const response = await fetch(publicUrl("api/ask"), {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ question }),
-    });
-
-    if (!response.ok) {
-      throw new Error(`Ask request failed with status ${response.status}`);
-    }
-
     return {
-      data: (await response.json()) as AskResponse,
+      data: await requestLiveAsk(question, history),
       mode: "api",
     };
   } catch (error) {

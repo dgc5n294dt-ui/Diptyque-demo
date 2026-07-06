@@ -1,11 +1,17 @@
 ﻿import type { AskResponse, ProductCardData } from "../lib/contracts.js";
 import type { ChatResultModel, ChatSuggestion } from "../services/exploration.js";
 
-type Props = {
+type ChatTurn = {
+  id: string;
   question: string;
-  loading: boolean;
+  askMode: "idle" | "api" | "static";
   result: AskResponse | null;
   chatModel: ChatResultModel | null;
+  loading: boolean;
+};
+
+type Props = {
+  turns: ChatTurn[];
   onAskSuggestion: (question: string) => void;
   onJumpToGraph: (nodeId: string) => void;
 };
@@ -76,7 +82,7 @@ function SuggestChips({ suggestions, onAskSuggestion, onJumpToGraph }: {
   );
 }
 
-export function RetrievalResultView({ question, loading, result, chatModel, onAskSuggestion, onJumpToGraph }: Props): JSX.Element {
+export function RetrievalResultView({ turns, onAskSuggestion, onJumpToGraph }: Props): JSX.Element {
   return (
     <div className="scroll-container">
       <div className="chat-msg bot">
@@ -93,54 +99,65 @@ export function RetrievalResultView({ question, loading, result, chatModel, onAs
         />
       </div>
 
-      {question.trim() ? <div className="chat-msg user">{question.trim()}</div> : null}
-      {loading ? <div className="chat-msg loading"><span className="thinking-text">思考中</span></div> : null}
+      {turns.map((turn) => {
+        const staticWarning = turn.askMode === "static"
+          ? "当前是 GitHub Pages 静态 fallback 模式，不是实时 DeepSeek 回答。要让模型真正基于图谱思考回答，需要走本地/后端 ask 接口模式。"
+          : "";
 
-      {chatModel ? (
-        <div className="chat-msg bot result-block">
-          <div className="answer-text">{chatModel.answer}</div>
+        return (
+          <div key={turn.id} className="chat-turn-block">
+            <div className="chat-msg user">{turn.question}</div>
+            {turn.loading ? <div className="chat-msg loading"><span className="thinking-text">思考中</span></div> : null}
+            {staticWarning ? <div className="chat-msg bot warning-block"><div className="detail-val">{staticWarning}</div></div> : null}
 
-          <div className="card-stack">
-            {chatModel.directProducts.map((item) => <ProductCard key={item.nodeId} item={item} onJumpToGraph={onJumpToGraph} />)}
-            {chatModel.indirectProducts.map((item) => <ProductCard key={item.nodeId} item={item} onJumpToGraph={onJumpToGraph} />)}
+            {turn.chatModel ? (
+              <div className="chat-msg bot result-block">
+                <div className="answer-text">{turn.chatModel.answer}</div>
+
+                <div className="card-stack">
+                  {turn.chatModel.directProducts.map((item) => <ProductCard key={item.nodeId} item={item} onJumpToGraph={onJumpToGraph} />)}
+                  {turn.chatModel.indirectProducts.map((item) => <ProductCard key={item.nodeId} item={item} onJumpToGraph={onJumpToGraph} />)}
+                </div>
+
+                <details className="retrieval-pipeline route-pipeline collapsed">
+                  <summary className="pipeline-header">
+                    <span className="pipeline-title">🔍 检索决策链路</span>
+                    <span className="pipeline-mode-badge">{turn.chatModel.modeLabel}</span>
+                  </summary>
+                  <div className="pipeline-body">
+                    <div className="detail-section">
+                      <div className="detail-section-title">匹配实体</div>
+                      {turn.chatModel.matchedEntities.length === 0 ? <div className="detail-val muted">暂无</div> : null}
+                      {turn.chatModel.matchedEntities.map((item) => <div key={item} className="detail-row"><span className="detail-val">{item}</span></div>)}
+                    </div>
+
+                    <div className="detail-section">
+                      <div className="detail-section-title">过滤证据</div>
+                      {turn.chatModel.filterEvidence.length === 0 ? <div className="detail-val muted">暂无</div> : null}
+                      {turn.chatModel.filterEvidence.map((item) => <div key={item} className="detail-row"><span className="detail-val">{item}</span></div>)}
+                    </div>
+
+                    <div className="detail-section">
+                      <div className="detail-section-title">知识证据</div>
+                      {turn.chatModel.evidencePaths.length === 0 ? <div className="detail-val muted">暂无</div> : null}
+                      {turn.chatModel.evidencePaths.map((item) => <div key={item} className="knowledge-evidence-row"><span className="chunk-text">{item}</span></div>)}
+                    </div>
+                  </div>
+                </details>
+
+                <SuggestChips suggestions={turn.chatModel.suggestions} onAskSuggestion={onAskSuggestion} onJumpToGraph={onJumpToGraph} />
+                <div className="answer-meta">{turn.chatModel.metaLine}</div>
+              </div>
+            ) : null}
+
+            {turn.result?.warnings.length ? (
+              <div className="chat-msg bot warning-block">
+                {turn.result.warnings.map((warning) => <div key={warning} className="detail-val">{warning}</div>)}
+              </div>
+            ) : null}
           </div>
-
-          <details className="retrieval-pipeline route-pipeline collapsed">
-            <summary className="pipeline-header">
-              <span className="pipeline-title">🔍 检索决策链路</span>
-              <span className="pipeline-mode-badge">{chatModel.modeLabel}</span>
-            </summary>
-            <div className="pipeline-body">
-              <div className="detail-section">
-                <div className="detail-section-title">匹配实体</div>
-                {chatModel.matchedEntities.length === 0 ? <div className="detail-val muted">暂无</div> : null}
-                {chatModel.matchedEntities.map((item) => <div key={item} className="detail-row"><span className="detail-val">{item}</span></div>)}
-              </div>
-
-              <div className="detail-section">
-                <div className="detail-section-title">过滤证据</div>
-                {chatModel.filterEvidence.length === 0 ? <div className="detail-val muted">暂无</div> : null}
-                {chatModel.filterEvidence.map((item) => <div key={item} className="detail-row"><span className="detail-val">{item}</span></div>)}
-              </div>
-
-              <div className="detail-section">
-                <div className="detail-section-title">知识证据</div>
-                {chatModel.evidencePaths.length === 0 ? <div className="detail-val muted">暂无</div> : null}
-                {chatModel.evidencePaths.map((item) => <div key={item} className="knowledge-evidence-row"><span className="chunk-text">{item}</span></div>)}
-              </div>
-            </div>
-          </details>
-
-          <SuggestChips suggestions={chatModel.suggestions} onAskSuggestion={onAskSuggestion} onJumpToGraph={onJumpToGraph} />
-          <div className="answer-meta">{chatModel.metaLine}</div>
-        </div>
-      ) : null}
-
-      {result?.warnings.length ? (
-        <div className="chat-msg bot warning-block">
-          {result.warnings.map((warning) => <div key={warning} className="detail-val">{warning}</div>)}
-        </div>
-      ) : null}
+        );
+      })}
     </div>
   );
 }
